@@ -406,8 +406,8 @@ export function Details() {
                   GIFTS
                 </h4>
                 <p className={`${cormorant.className} text-sm sm:text-base md:text-lg text-[#606C60]/90 leading-relaxed`}>
-                  Your presence is already the greatest gift, but if you'd like to give something, cash gifts are preferred. This will help us start our new journey together in the most meaningful way.
-                </p>
+                We are grateful to God for your love and prayers on our special day.
+                For those who wish to give a gift, a monetary gift to help us begin our life together would be deeply appreciated.                </p>
               </div>
             </div>
           </div>
