@@ -163,7 +163,7 @@ export function GuestInformation() {
                 {/* Guest */}
                 <div className="flex flex-col items-center">
                   <div className="w-full h-48 sm:h-52 md:h-56 flex items-center justify-center">
-                    <Image src="/Details/Guest-removebg-preview.png" alt="Guest attire" width={280} height={280} className="w-full h-full max-w-[200px] sm:max-w-[220px] object-contain" />
+                    <Image src="/Details/Gemini_Generated_Image_olo2fuolo2fuolo2-removebg-preview.png" alt="Guest attire" width={280} height={280} className="w-full h-full max-w-[200px] sm:max-w-[220px] object-contain" />
                   </div>
                   <p className={`${cormorant.className} text-sm sm:text-base font-semibold text-[#606C60] mt-2 mb-1.5 text-center`}>Guest</p>
                   <div className="flex gap-1.5 justify-center">
