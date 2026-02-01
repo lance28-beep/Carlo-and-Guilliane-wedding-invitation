@@ -115,11 +115,11 @@ export function GuestInformation() {
                 {/* Mother | Father */}
                 <div className="flex flex-col items-center">
                   <div className="w-full h-48 sm:h-52 md:h-56 flex items-center justify-center">
-                    <Image src="/Details/MotherandFather-removebg-preview.png" alt="Mother and Father attire" width={280} height={280} className="w-full h-full max-w-[200px] sm:max-w-[220px] object-contain" />
+                    <Image src="/Details/parents.png" alt="Mother and Father attire" width={280} height={280} className="w-full h-full max-w-[200px] sm:max-w-[220px] object-contain" />
                   </div>
                   <p className={`${cormorant.className} text-sm sm:text-base font-semibold text-[#606C60] mt-2 mb-1.5 text-center`}>Mother | Father</p>
                   <div className="flex gap-1.5 justify-center">
-                    {['#96A298', '#737373', '#555754'].map((c) => (
+                    {['#555754'].map((c) => (
                       <div key={c} className="w-6 h-6 sm:w-7 sm:h-7 rounded" style={{ backgroundColor: c, border: '1px solid rgba(96,108,96,0.2)' }} />
                     ))}
                   </div>
@@ -127,11 +127,11 @@ export function GuestInformation() {
                 {/* Ninong | Ninang */}
                 <div className="flex flex-col items-center">
                   <div className="w-full h-48 sm:h-52 md:h-56 flex items-center justify-center">
-                    <Image src="/Details/NinongNinang-removebg-preview.png" alt="Ninong and Ninang attire" width={280} height={280} className="w-full h-full max-w-[200px] sm:max-w-[220px] object-contain" />
+                    <Image src="/Details/sponsors-new.png" alt="Ninong and Ninang attire" width={280} height={280} className="w-full h-full max-w-[200px] sm:max-w-[220px] object-contain" />
                   </div>
-                  <p className={`${cormorant.className} text-sm sm:text-base font-semibold text-[#606C60] mt-2 mb-1.5 text-center`}>Ninong | Ninang</p>
+                  <p className={`${cormorant.className} text-sm sm:text-base font-semibold text-[#606C60] mt-2 mb-1.5 text-center`}>Godparents</p>
                   <div className="flex gap-1.5 justify-center">
-                    {['#E1D5C7', '#737373', '#555754'].map((c) => (
+                    {['#DDBDA6', '#6A6A6A'].map((c) => (
                       <div key={c} className="w-6 h-6 sm:w-7 sm:h-7 rounded" style={{ backgroundColor: c, border: '1px solid rgba(96,108,96,0.2)' }} />
                     ))}
                   </div>
@@ -139,11 +139,11 @@ export function GuestInformation() {
                 {/* Groomsmen */}
                 <div className="flex flex-col items-center">
                   <div className="w-full h-48 sm:h-52 md:h-56 flex items-center justify-center">
-                    <Image src="/Details/groomsmennewattire.png" alt="Groomsmen attire" width={280} height={280} className="w-full h-full max-w-[200px] sm:max-w-[220px] object-contain" />
+                    <Image src="/Details/groomsmennewattire2.png" alt="Groomsmen attire" width={280} height={280} className="w-full h-full max-w-[200px] sm:max-w-[220px] object-contain" />
                   </div>
                   <p className={`${cormorant.className} text-sm sm:text-base font-semibold text-[#606C60] mt-2 mb-1.5 text-center`}>Groomsmen</p>
                   <div className="flex gap-1.5 justify-center">
-                    {['#737373', '#555754'].map((c) => (
+                    {['#BDBDBD'].map((c) => (
                       <div key={c} className="w-6 h-6 sm:w-7 sm:h-7 rounded" style={{ backgroundColor: c, border: '1px solid rgba(96,108,96,0.2)' }} />
                     ))}
                   </div>

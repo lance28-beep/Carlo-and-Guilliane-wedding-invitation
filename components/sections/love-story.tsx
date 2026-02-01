@@ -37,7 +37,7 @@ export function LoveStory() {
         text={
           <>
             <p>
-              I wasn&apos;t looking for anything, yet somehow, our connection grew in its own gentle, unexpected way. And then, on June 1, 2022, our story truly began—we became us. We found a love that feels like home.
+              I weren&apos;t looking for anything, yet somehow, our connection grew in its own gentle, unexpected way. And then, on June 1, 2022, our story truly began—we became us. We found a love that feels like home.
             </p>
           </>
         }
