@@ -129,7 +129,7 @@ export function GuestInformation() {
                   <div className="w-full h-48 sm:h-52 md:h-56 flex items-center justify-center">
                     <Image src="/Details/sponsors-new.png" alt="Ninong and Ninang attire" width={280} height={280} className="w-full h-full max-w-[200px] sm:max-w-[220px] object-contain" />
                   </div>
-                  <p className={`${cormorant.className} text-sm sm:text-base font-semibold text-[#606C60] mt-2 mb-1.5 text-center`}>Godparents</p>
+                  <p className={`${cormorant.className} text-sm sm:text-base font-semibold text-[#606C60] mt-2 mb-1.5 text-center`}>Principal Sponsors(Godparents)</p>
                   <div className="flex gap-1.5 justify-center">
                     {['#DDBDA6', '#6A6A6A'].map((c) => (
                       <div key={c} className="w-6 h-6 sm:w-7 sm:h-7 rounded" style={{ backgroundColor: c, border: '1px solid rgba(96,108,96,0.2)' }} />
