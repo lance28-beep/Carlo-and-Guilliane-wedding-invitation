@@ -139,7 +139,7 @@ export function GuestInformation() {
                 {/* Groomsmen */}
                 <div className="flex flex-col items-center">
                   <div className="w-full h-48 sm:h-52 md:h-56 flex items-center justify-center">
-                    <Image src="/Details/Groomsmen-attire.png" alt="Groomsmen attire" width={280} height={280} className="w-full h-full max-w-[200px] sm:max-w-[220px] object-contain" />
+                    <Image src="/Details/groomsmennewattire.png" alt="Groomsmen attire" width={280} height={280} className="w-full h-full max-w-[200px] sm:max-w-[220px] object-contain" />
                   </div>
                   <p className={`${cormorant.className} text-sm sm:text-base font-semibold text-[#606C60] mt-2 mb-1.5 text-center`}>Groomsmen</p>
                   <div className="flex gap-1.5 justify-center">
