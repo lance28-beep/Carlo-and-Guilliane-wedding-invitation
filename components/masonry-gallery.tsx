@@ -51,7 +51,7 @@ export default function MasonryGallery({ images }: { images: ImageItem[] }) {
       {filtered.length === 0 ? (
         <div className="text-center text-[#606C60]/80 font-sans">No images to display.</div>
       ) : (
-        <div className="columns-1 sm:columns-2 md:columns-3 lg:columns-4 gap-3 sm:gap-4">
+        <div className="columns-2 md:columns-3 lg:columns-4 gap-3 sm:gap-4">
           {filtered.map((img, idx) => (
           <button
             key={img.src}

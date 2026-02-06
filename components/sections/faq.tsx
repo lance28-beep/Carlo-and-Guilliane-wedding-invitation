@@ -133,7 +133,7 @@ export function FAQ() {
       {/* FAQ content */}
       <div className="relative z-30 max-w-4xl mx-auto px-3 sm:px-5">
         {/* Main card */}
-        <div className="relative bg-[#E1D5C7]/95 backdrop-blur-md border border-[#606C60]/40 rounded-lg sm:rounded-xl md:rounded-2xl shadow-[0_20px_60px_rgba(96,108,96,0.15)] overflow-hidden">
+        <div className="relative bg-white backdrop-blur-md border border-[#800A06]/30 rounded-lg sm:rounded-xl md:rounded-2xl shadow-[0_20px_60px_rgba(128,10,6,0.18)] overflow-hidden">
           
           {/* FAQ items */}
           <div className="relative p-2.5 sm:p-4 md:p-5 lg:p-6">
@@ -144,7 +144,7 @@ export function FAQ() {
                 return (
                   <div
                     key={index}
-                    className="rounded-lg sm:rounded-xl border border-[#606C60]/40 bg-white/80 hover:border-[#606C60]/60 hover:bg-white transition-all duration-300 overflow-hidden shadow-sm"
+                    className="rounded-lg sm:rounded-xl border border-[#800A06]/30 bg-white hover:border-[#800A06]/60 hover:bg-white transition-all duration-300 overflow-hidden shadow-sm"
                   >
                     <button
                       onClick={() => toggleItem(index)}
@@ -152,12 +152,12 @@ export function FAQ() {
                       aria-expanded={isOpen}
                       aria-controls={contentId}
                     >
-                      <span className={`${cinzel.className} font-semibold text-[#606C60] pr-2 sm:pr-3 md:pr-4 text-xs sm:text-sm md:text-base lg:text-lg leading-snug sm:leading-relaxed transition-colors duration-200 group-hover:text-[#606C60]`}>
+                      <span className={`${cinzel.className} font-semibold text-[#800A06] pr-2 sm:pr-3 md:pr-4 text-xs sm:text-sm md:text-base lg:text-lg leading-snug sm:leading-relaxed transition-colors duration-200 group-hover:text-[#671107]`}>
                         {item.question}
                       </span>
                       <ChevronDown
                         size={18}
-                        className={`text-[#606C60]/60 flex-shrink-0 transition-transform duration-300 ${isOpen ? "rotate-180 text-[#606C60]" : ""} w-4 h-4 sm:w-5 sm:h-5`}
+                        className={`text-[#800A06]/60 flex-shrink-0 transition-transform duration-300 ${isOpen ? "rotate-180 text-[#800A06]" : ""} w-4 h-4 sm:w-5 sm:h-5`}
                         aria-hidden
                       />
                     </button>
@@ -170,13 +170,13 @@ export function FAQ() {
                       }`}
                     >
                       <div className="overflow-hidden">
-                        <div className="px-2.5 sm:px-3 md:px-4 lg:px-5 py-2 sm:py-2.5 md:py-3 lg:py-4 bg-white/50 border-t border-[#606C60]/40">
+                        <div className="px-2.5 sm:px-3 md:px-4 lg:px-5 py-2 sm:py-2.5 md:py-3 lg:py-4 bg-white border-t border-[#800A06]/30">
                           {item.answer.includes("[RSVP_LINK]") ? (
-                            <p className={`${cormorant.className} text-[#606C60] font-medium leading-relaxed sm:leading-loose text-xs sm:text-sm md:text-base lg:text-lg whitespace-pre-line tracking-wide`}>
+                            <p className={`${cormorant.className} text-[#800A06] font-medium leading-relaxed sm:leading-loose text-xs sm:text-sm md:text-base lg:text-lg whitespace-pre-line tracking-wide`}>
                               {item.answer.split("[RSVP_LINK]")[0]}
                               <a 
                                 href="#guest-list" 
-                                className="text-[#606C60] underline font-bold hover:text-[#606C60]/80 transition-colors"
+                                className="text-[#800A06] underline font-bold hover:text-[#671107] transition-colors"
                                 onClick={(e) => {
                                   e.preventDefault()
                                   document.getElementById('guest-list')?.scrollIntoView({ behavior: 'smooth' })
@@ -188,7 +188,7 @@ export function FAQ() {
                             </p>
                           ) : item.question === "Is there a dress code?" ? (
                             <div className="space-y-3 sm:space-y-4">
-                              <p className={`${cormorant.className} text-[#606C60] font-medium leading-relaxed sm:leading-loose text-xs sm:text-sm md:text-base lg:text-lg tracking-wide`}>
+                              <p className={`${cormorant.className} text-[#800A06] font-medium leading-relaxed sm:leading-loose text-xs sm:text-sm md:text-base lg:text-lg tracking-wide`}>
                                 {item.answer}
                               </p>
                               {/* Color Palette */}
@@ -198,7 +198,7 @@ export function FAQ() {
                                   <div 
                                     className="w-full h-16 sm:h-20 md:h-24 lg:h-28 transition-all duration-300 group-hover:scale-105 group-hover:shadow-xl"
                                     style={{ 
-                                      backgroundColor: '#606C60',
+                                      backgroundColor: '#800A06',
                                       clipPath: 'polygon(0 12%, 50% 0%, 100% 12%, 100% 100%, 0% 100%)',
                                       borderRadius: '0 0 4px 4px',
                                       boxShadow: '0 2px 8px rgba(96, 108, 96, 0.25)',
@@ -212,7 +212,7 @@ export function FAQ() {
                                   <div 
                                     className="w-full h-16 sm:h-20 md:h-24 lg:h-28 transition-all duration-300 group-hover:scale-105 group-hover:shadow-xl"
                                     style={{ 
-                                      backgroundColor: '#E1D5C7',
+                                      backgroundColor: '#EFCA93',
                                       clipPath: 'polygon(0 12%, 50% 0%, 100% 12%, 100% 100%, 0% 100%)',
                                       borderRadius: '0 0 4px 4px',
                                       boxShadow: '0 2px 8px rgba(225, 213, 199, 0.25)',
@@ -226,7 +226,7 @@ export function FAQ() {
                                   <div 
                                     className="w-full h-16 sm:h-20 md:h-24 lg:h-28 transition-all duration-300 group-hover:scale-105 group-hover:shadow-xl"
                                     style={{ 
-                                      backgroundColor: '#96A298',
+                                      backgroundColor: '#AC5F3E',
                                       clipPath: 'polygon(0 12%, 50% 0%, 100% 12%, 100% 100%, 0% 100%)',
                                       borderRadius: '0 0 4px 4px',
                                       boxShadow: '0 2px 8px rgba(150, 162, 152, 0.25)',
@@ -240,7 +240,7 @@ export function FAQ() {
                                   <div 
                                     className="w-full h-16 sm:h-20 md:h-24 lg:h-28 transition-all duration-300 group-hover:scale-105 group-hover:shadow-xl"
                                     style={{ 
-                                      backgroundColor: '#DFDBD2',
+                                      backgroundColor: '#DEC1A0',
                                       clipPath: 'polygon(0 12%, 50% 0%, 100% 12%, 100% 100%, 0% 100%)',
                                       borderRadius: '0 0 4px 4px',
                                       boxShadow: '0 2px 8px rgba(223, 219, 210, 0.25)',
@@ -254,7 +254,7 @@ export function FAQ() {
                                   <div 
                                     className="w-full h-16 sm:h-20 md:h-24 lg:h-28 transition-all duration-300 group-hover:scale-105 group-hover:shadow-xl"
                                     style={{ 
-                                      backgroundColor: '#555754',
+                                      backgroundColor: '#671107',
                                       clipPath: 'polygon(0 12%, 50% 0%, 100% 12%, 100% 100%, 0% 100%)',
                                       borderRadius: '0 0 4px 4px',
                                       boxShadow: '0 2px 8px rgba(85, 87, 84, 0.25)',
@@ -265,7 +265,7 @@ export function FAQ() {
                               </div>
                             </div>
                           ) : (
-                            <p className={`${cormorant.className} text-[#606C60] font-medium leading-relaxed sm:leading-loose text-xs sm:text-sm md:text-base lg:text-lg whitespace-pre-line tracking-wide`}>
+                            <p className={`${cormorant.className} text-[#800A06] font-medium leading-relaxed sm:leading-loose text-xs sm:text-sm md:text-base lg:text-lg whitespace-pre-line tracking-wide`}>
                               {item.answer}
                             </p>
                           )}

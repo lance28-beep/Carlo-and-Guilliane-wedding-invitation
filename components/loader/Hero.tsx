@@ -105,7 +105,7 @@ export const Hero: React.FC<HeroProps> = ({ onOpen, visible }) => {
         <div 
           className="absolute inset-0 pointer-events-none"
           style={{
-            background: 'linear-gradient(to bottom, rgba(225, 213, 199, 0.5), rgba(225, 213, 199, 0.7))'
+            background: 'linear-gradient(to bottom, rgba(239, 210, 170, 0.5), rgba(239, 210, 170, 0.7))'
           }}
         />
         
@@ -113,7 +113,7 @@ export const Hero: React.FC<HeroProps> = ({ onOpen, visible }) => {
         <div 
           className="absolute inset-0 pointer-events-none"
           style={{
-            background: 'radial-gradient(ellipse at center, transparent 0%, rgba(225, 213, 199, 0.3) 100%)'
+            background: 'radial-gradient(ellipse at center, transparent 0%, rgba(239, 210, 170, 0.3) 100%)'
           }}
         />
       </div>
@@ -127,21 +127,25 @@ export const Hero: React.FC<HeroProps> = ({ onOpen, visible }) => {
             contentVisible ? 'opacity-100 translate-y-0' : 'opacity-0 -translate-y-8'
           }`}
         >
-          <div className="relative w-32 h-32 sm:w-40 sm:h-40 md:w-48 md:h-48 flex items-center justify-center">
+          <div className="relative w-40 h-40 sm:w-48 sm:h-48 md:w-56 md:h-56 lg:w-64 lg:h-64 flex items-center justify-center">
             {/* Monogram Image with subtle animation */}
             <div 
-              className="relative w-28 h-28 sm:w-36 sm:h-36 md:w-44 md:h-44 transition-transform duration-700 ease-out hover:scale-105"
+              className="relative w-36 h-36 sm:w-44 sm:h-44 md:w-52 md:h-52 lg:w-60 lg:h-60 transition-transform duration-700 ease-out hover:scale-105"
               style={{
                 animation: contentVisible ? 'gentleFloat 3s ease-in-out infinite' : 'none'
               }}
             >
               <Image
-                src="/monogram/newMonogram.png"
+                src="/monogram/monogram.png"
                 alt="Monogram"
                 fill
                 className="object-contain drop-shadow-lg"
                 priority
-                style={{ filter: 'brightness(0) saturate(100%) invert(37%) sepia(3%) saturate(1200%) hue-rotate(120deg) brightness(95%) contrast(92%)' }}
+                style={{
+                  // Tint towards #800A06
+                  filter:
+                    'brightness(0) saturate(100%) invert(9%) sepia(74%) saturate(3161%) hue-rotate(353deg) brightness(92%) contrast(103%)',
+                }}
               />
             </div>
           </div>
@@ -157,8 +161,8 @@ export const Hero: React.FC<HeroProps> = ({ onOpen, visible }) => {
             style={{
               fontFamily: '"Great Vibes", cursive',
               fontWeight: 400,
-              color: '#606C60',
-              textShadow: '0 2px 8px rgba(96, 108, 96, 0.15)',
+              color: '#800A06',
+              textShadow: '0 2px 8px rgba(128, 10, 6, 0.15)',
             }}
           >
             You are
@@ -171,8 +175,8 @@ export const Hero: React.FC<HeroProps> = ({ onOpen, visible }) => {
             style={{
               fontFamily: '"Cinzel", serif',
               fontWeight: 700,
-              color: '#606C60',
-              textShadow: '0 2px 8px rgba(96, 108, 96, 0.15)',
+              color: '#800A06',
+              textShadow: '0 2px 8px rgba(128, 10, 6, 0.15)',
               letterSpacing: '0.05em',
             }}
           >
@@ -187,23 +191,23 @@ export const Hero: React.FC<HeroProps> = ({ onOpen, visible }) => {
               contentVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'
             }`}
             style={{
-              backgroundColor: '#606C60',
-              borderColor: '#606C60',
-              color: '#FFFFFF',
+              backgroundColor: '#800A06',
+              borderColor: '#800A06',
+              color: '#EFCA93',
             }}
             onMouseEnter={(e) => {
-              e.currentTarget.style.backgroundColor = '#4d5650';
+              e.currentTarget.style.backgroundColor = '#671107';
               e.currentTarget.style.transform = 'translateY(-2px)';
-              e.currentTarget.style.borderColor = '#4d5650';
+              e.currentTarget.style.borderColor = '#671107';
             }}
             onMouseLeave={(e) => {
-              e.currentTarget.style.backgroundColor = '#606C60';
+              e.currentTarget.style.backgroundColor = '#800A06';
               e.currentTarget.style.transform = 'translateY(0)';
-              e.currentTarget.style.borderColor = '#606C60';
+              e.currentTarget.style.borderColor = '#800A06';
             }}
           >
             <span
-              style={{ fontFamily: '"Cinzel", serif', fontWeight: 500, color: '#FFFFFF' }}
+              style={{ fontFamily: '"Cinzel", serif', fontWeight: 500, color: '#EFCA93' }}
             >
               Open Invitation
             </span>

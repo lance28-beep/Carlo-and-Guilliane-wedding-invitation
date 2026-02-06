@@ -443,14 +443,14 @@ export function GuestList() {
           <div className="relative p-2.5 sm:p-4 md:p-5 lg:p-6 overflow-visible">
             <div className="relative z-10 space-y-3 sm:space-y-4 overflow-visible">
               <div className="flex items-center gap-2 sm:gap-3">
-                <div className="bg-[#606C60] p-1.5 sm:p-2 rounded-lg shadow-md">
-                  <Search className="h-3.5 w-3.5 sm:h-4 sm:w-4 md:h-5 md:w-5 text-white" />
+                <div className="bg-[#800A06] p-1.5 sm:p-2 rounded-lg shadow-md">
+                  <Search className="h-3.5 w-3.5 sm:h-4 sm:w-4 md:h-5 md:w-5 text-[#EFCA93]" />
                 </div>
                 <div>
-                  <label className="block text-xs sm:text-sm md:text-base font-semibold text-white font-sans mb-0.5 sm:mb-1">
+                  <label className="block text-xs sm:text-sm md:text-base font-semibold text-[#EFCA93] font-sans mb-0.5 sm:mb-1">
                     Find Your Name
                   </label>
-                  <p className="text-[10px] sm:text-xs text-white/80 font-sans">
+                  <p className="text-[10px] sm:text-xs text-[#EFCA93]/90 font-sans">
                     Type as you search to see instant results
                   </p>
                 </div>
@@ -484,21 +484,21 @@ export function GuestList() {
                         className="w-full px-2.5 sm:px-3 py-2 sm:py-2.5 text-left hover:bg-[#F4F4F4]/40 active:bg-[#606C60]/40 transition-all duration-200 flex items-center gap-2 sm:gap-3 border-b border-[#606C60]/40 last:border-b-0 group"
                       >
                         <div className="relative flex-shrink-0">
-                          <div className="bg-[#606C60] p-1 sm:p-1.5 rounded-full shadow-sm group-hover:shadow-md transition-all duration-300">
-                            <User className="h-3 w-3 sm:h-3.5 sm:w-3.5 text-white" />
+                          <div className="bg-[#800A06] p-1 sm:p-1.5 rounded-full shadow-sm group-hover:shadow-md transition-all duration-300">
+                            <User className="h-3 w-3 sm:h-3.5 sm:w-3.5 text-[#EFCA93]" />
                           </div>
                         </div>
                         <div className="flex-1 min-w-0">
-                          <div className="font-semibold text-xs sm:text-sm text-[#243127] group-hover:text-[#606C60] transition-colors duration-200 truncate">
+                          <div className="font-semibold text-xs sm:text-sm text-[#800A06] group-hover:text-[#671107] transition-colors duration-200 truncate">
                             {guest.Name}
                           </div>
                           {guest.Email && guest.Email !== "Pending" && (
-                            <div className="text-[10px] sm:text-xs text-[#909E8D]/80 truncate mt-0.5">
+                            <div className="text-[10px] sm:text-xs text-[#800A06]/70 truncate mt-0.5">
                               {guest.Email}
                             </div>
                           )}
                         </div>
-                        <div className="text-[#909E8D]/70 group-hover:text-[#606C60] group-hover:translate-x-1 transition-all duration-200 flex-shrink-0">
+                        <div className="text-[#800A06]/60 group-hover:text-[#671107] group-hover:translate-x-1 transition-all duration-200 flex-shrink-0">
                           <svg className="w-3.5 h-3.5 sm:w-4 sm:h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
                           </svg>
@@ -555,34 +555,34 @@ export function GuestList() {
           onClick={handleCloseModal}
         >
             <div 
-              className="relative w-full max-w-md sm:max-w-lg mx-1 sm:mx-2 md:mx-4 bg-white rounded-xl sm:rounded-2xl shadow-2xl border-2 border-[#606C60]/80 overflow-hidden animate-in zoom-in-95 duration-300 max-h-[95vh] flex flex-col"
+              className="relative w-full max-w-md sm:max-w-lg mx-1 sm:mx-2 md:mx-4 bg-[#EFCA93] rounded-xl sm:rounded-2xl shadow-2xl border-2 border-[#800A06] overflow-hidden animate-in zoom-in-95 duration-300 max-h-[95vh] flex flex-col"
               onClick={(e) => e.stopPropagation()}
             >
               {/* Modal Header */}
-              <div className="relative bg-[#BCCFC0] p-3 sm:p-4 md:p-5 lg:p-6 flex-shrink-0">
+              <div className="relative bg-[#800A06] p-3 sm:p-4 md:p-5 lg:p-6 flex-shrink-0">
                 <div className="relative flex items-start justify-between gap-1.5 sm:gap-2">
                   <div className="flex-1 min-w-0">
                     <div className="flex items-center gap-1.5 sm:gap-2 md:gap-3 mb-1 sm:mb-1.5 md:mb-2 lg:mb-3">
-                      <div className="w-5 h-5 sm:w-6 sm:h-6 md:w-8 md:h-8 lg:w-10 lg:h-10 bg-white/20 rounded-full flex items-center justify-center flex-shrink-0">
-                        <Heart className="h-2.5 w-2.5 sm:h-3 sm:w-3 md:h-4 md:w-4 lg:h-5 lg:w-5 text-[#606C60]" />
+                      <div className="w-5 h-5 sm:w-6 sm:h-6 md:w-8 md:h-8 lg:w-10 lg:h-10 bg-white/15 rounded-full flex items-center justify-center flex-shrink-0">
+                        <Heart className="h-2.5 w-2.5 sm:h-3 sm:w-3 md:h-4 md:w-4 lg:h-5 lg:w-5 text-[#EFCA93]" />
                       </div>
-                      <h3 className={`${cinzel.className} text-sm sm:text-base md:text-xl lg:text-2xl xl:text-3xl font-bold text-[#606C60] truncate`}>
+                      <h3 className={`${cinzel.className} text-sm sm:text-base md:text-xl lg:text-2xl xl:text-3xl font-bold text-white truncate`}>
                         You're Invited!
                       </h3>
                     </div>
-                    <p className={`${cormorant.className} text-[#606C60]/95 text-[10px] sm:text-xs md:text-sm lg:text-base xl:text-lg leading-tight sm:leading-normal`}>
-                      Hello <span className="font-extrabold text-[#606C60]">{selectedGuest?.Name}</span>, you are invited to our wedding!
+                    <p className={`${cormorant.className} text-white text-[10px] sm:text-xs md:text-sm lg:text-base xl:text-lg leading-tight sm:leading-normal`}>
+                      Hello <span className="font-extrabold text-white">{selectedGuest?.Name}</span>, you are invited to our wedding!
                     </p>
-                    <p className={`${cormorant.className} text-[#606C60]/90 text-[10px] sm:text-xs md:text-sm mt-1 sm:mt-1.5`}>
-                      We've reserved <span className="font-bold text-[#606C60]">{selectedGuest?.AllowedGuests || 1}</span> {selectedGuest?.AllowedGuests === 1 ? 'seat' : 'seats'} for you.
+                    <p className={`${cormorant.className} text-white/90 text-[10px] sm:text-xs md:text-sm mt-1 sm:mt-1.5`}>
+                      We've reserved <span className="font-bold text-white">{selectedGuest?.AllowedGuests || 1}</span> {selectedGuest?.AllowedGuests === 1 ? 'seat' : 'seats'} for you.
                     </p>
                   </div>
                   {!hasResponded && (
                     <button
                       onClick={handleCloseModal}
-                      className="text-[#606C60]/80 hover:text-[#606C60] transition-colors p-0.5 sm:p-1 md:p-2 hover:bg-white/20 rounded-full flex-shrink-0"
+                      className="text-white/80 hover:text-white transition-colors p-0.5 sm:p-1 md:p-2 hover:bg-white/10 rounded-full flex-shrink-0"
                     >
-                      <X className="h-3.5 w-3.5 sm:h-4 sm:w-4 md:h-5 md:w-5 text-[#606C60]" />
+                      <X className="h-3.5 w-3.5 sm:h-4 sm:w-4 md:h-5 md:w-5 text-white" />
                     </button>
                   )}
                 </div>
@@ -593,16 +593,16 @@ export function GuestList() {
                 {hasResponded ? (
                   // Thank you message for guests who already responded
                   <div className="text-center py-3 sm:py-4 md:py-6">
-                    <div className="inline-flex items-center justify-center w-10 h-10 sm:w-12 sm:h-12 md:w-16 md:h-16 bg-[#606C60] rounded-full mb-2 sm:mb-3 md:mb-4">
+                    <div className="inline-flex items-center justify-center w-10 h-10 sm:w-12 sm:h-12 md:w-16 md:h-16 bg-[#800A06] rounded-full mb-2 sm:mb-3 md:mb-4">
                       <CheckCircle className="h-5 w-5 sm:h-6 sm:w-6 md:h-8 md:w-8 text-white" />
                     </div>
-                    <h4 className={`${cinzel.className} text-base sm:text-lg md:text-xl lg:text-2xl font-bold text-[#243127] mb-1.5 sm:mb-2 md:mb-3`}>
+                    <h4 className={`${cinzel.className} text-base sm:text-lg md:text-xl lg:text-2xl font-bold text-[#800A06] mb-1.5 sm:mb-2 md:mb-3`}>
                       Thank You for Responding!
                     </h4>
-                    <p className="text-[#909E8D] text-[10px] sm:text-xs md:text-sm mb-2 sm:mb-3 md:mb-4 px-2">
+                    <p className="text-[#800A06]/80 text-[10px] sm:text-xs md:text-sm mb-2 sm:mb-3 md:mb-4 px-2">
                       We've received your RSVP and look forward to celebrating with you!
                     </p>
-                    <div className="bg-[#F4F4F4]/40 rounded-lg p-2.5 sm:p-3 md:p-4 border border-[#606C60]/70 space-y-2 sm:space-y-2.5 md:space-y-3">
+                    <div className="bg-white/60 rounded-lg p-2.5 sm:p-3 md:p-4 border border-[#800A06]/60 space-y-2 sm:space-y-2.5 md:space-y-3">
                       <div className="flex items-center justify-center gap-1.5 sm:gap-2 md:gap-3 mb-1.5 sm:mb-2">
                         {selectedGuest?.RSVP === "Yes" && (
                           <>
@@ -622,18 +622,18 @@ export function GuestList() {
                         )}
                       </div>
                       {selectedGuest?.RSVP === "Yes" && (
-                        <div className="bg-[#F4F4F4]/60 rounded-lg p-2 sm:p-2.5 md:p-3 border border-[#606C60]/80">
+                        <div className="bg-white rounded-lg p-2 sm:p-2.5 md:p-3 border border-[#800A06]/70">
                           <div className="text-center">
-                            <p className="text-[10px] sm:text-xs text-[#909E8D] mb-1 font-medium">Number of Guests</p>
-                            <p className="text-lg sm:text-xl md:text-2xl font-bold text-[#243127]">
+                            <p className="text-[10px] sm:text-xs text-[#800A06]/80 mb-1 font-medium">Number of Guests</p>
+                            <p className="text-lg sm:text-xl md:text-2xl font-bold text-[#800A06]">
                               {selectedGuest.AllowedGuests || 1}
                             </p>
                           </div>
                         </div>
                       )}
                       {selectedGuest && selectedGuest.Message && selectedGuest.Message.trim() !== "" && (
-                        <div className="pt-1.5 sm:pt-2 border-t border-[#606C60]/70">
-                          <p className="text-[10px] sm:text-xs text-[#909E8D] italic px-1">
+                        <div className="pt-1.5 sm:pt-2 border-t border-[#800A06]/50">
+                          <p className="text-[10px] sm:text-xs text-[#800A06]/80 italic px-1">
                             "{selectedGuest.Message}"
                           </p>
                         </div>
@@ -641,7 +641,7 @@ export function GuestList() {
                     </div>
                     <button
                       onClick={handleCloseModal}
-                      className="mt-3 sm:mt-4 md:mt-6 !bg-[#606C60] hover:!bg-[#606C60]/90 text-white px-3 sm:px-4 md:px-6 py-1.5 sm:py-2 md:py-2.5 rounded-lg text-xs sm:text-sm font-semibold transition-all duration-300"
+                      className="mt-3 sm:mt-4 md:mt-6 !bg-[#800A06] hover:!bg-[#671107] text-[#EFCA93] px-3 sm:px-4 md:px-6 py-1.5 sm:py-2 md:py-2.5 rounded-lg text-xs sm:text-sm font-semibold transition-all duration-300"
                     >
                       Close
                     </button>
@@ -657,8 +657,8 @@ export function GuestList() {
                   >
                     {/* Can you attend? */}
                     <div>
-                    <label className={`flex items-center gap-1.5 sm:gap-2 text-xs sm:text-sm font-semibold text-[#606C60] mb-1.5 sm:mb-2 ${cormorant.className}`}>
-                        <Sparkles className="h-3.5 w-3.5 sm:h-4 sm:w-4 text-[#606C60] flex-shrink-0" />
+                    <label className={`flex items-center gap-1.5 sm:gap-2 text-sm sm:text-base font-semibold text-[#800A06] mb-1.5 sm:mb-2 ${cormorant.className}`}>
+                        <Sparkles className="h-3.5 w-3.5 sm:h-4 sm:w-4 text-[#800A06] flex-shrink-0" />
                         <span>Can you attend? *</span>
                       </label>
                       <div className="grid grid-cols-2 gap-1.5 sm:gap-2 md:gap-3">
@@ -669,19 +669,19 @@ export function GuestList() {
                           }
                           className={`relative p-2 sm:p-2.5 md:p-3 lg:p-4 rounded-lg border-2 transition-all duration-300 ${
                             formData.RSVP === "Yes"
-                              ? "border-[#606C60] bg-[#606C60]/10 shadow-md scale-105"
-                              : "border-[#606C60]/60 bg-white hover:border-[#606C60]/70 hover:shadow-sm"
+                              ? "border-[#800A06] bg-[#800A06]/10 shadow-md scale-105"
+                              : "border-[#800A06]/50 bg-white hover:border-[#800A06]/70 hover:shadow-sm"
                           }`}
                         >
                           <div className="flex items-center justify-center gap-1.5 sm:gap-2">
                             <CheckCircle
                               className={`h-4 w-4 sm:h-5 sm:w-5 flex-shrink-0 ${
-                                formData.RSVP === "Yes" ? "text-[#606C60]" : "text-[#909E8D]/60"
+                                formData.RSVP === "Yes" ? "text-[#800A06]" : "text-[#909E8D]/60"
                               }`}
                             />
                             <span
                               className={`text-xs sm:text-sm font-bold ${
-                                formData.RSVP === "Yes" ? "text-[#606C60]" : "text-[#243127]"
+                                formData.RSVP === "Yes" ? "text-[#800A06]" : "text-[#243127]"
                               }`}
                             >
                               Yes!
@@ -694,7 +694,7 @@ export function GuestList() {
                           className={`relative p-2 sm:p-2.5 md:p-3 lg:p-4 rounded-lg border-2 transition-all duration-300 ${
                             formData.RSVP === "No"
                               ? "border-red-500 bg-red-50 shadow-md scale-105"
-                              : "border-[#606C60]/60 bg-white hover:border-[#606C60]/70 hover:shadow-sm"
+                              : "border-[#800A06]/50 bg-white hover:border-[#800A06]/70 hover:shadow-sm"
                           }`}
                         >
                           <div className="flex items-center justify-center gap-1.5 sm:gap-2">
@@ -718,24 +718,24 @@ export function GuestList() {
                     {/* Who's Coming With You - Companion Names */}
                     {formData.RSVP === "Yes" && companions.length > 0 && (
                       <div className="space-y-2.5 sm:space-y-3">
-                        <label className={`flex items-center gap-1.5 sm:gap-2 text-xs sm:text-sm font-semibold text-[#606C60] ${cormorant.className}`}>
-                          <Users className="h-3.5 w-3.5 sm:h-4 sm:w-4 text-[#606C60] flex-shrink-0" />
+                        <label className={`flex items-center gap-1.5 sm:gap-2 text-xs sm:text-sm font-semibold text-[#800A06] ${cormorant.className}`}>
+                          <Users className="h-3.5 w-3.5 sm:h-4 sm:w-4 text-[#800A06] flex-shrink-0" />
                           <span>Who's Coming With You?</span>
                         </label>
-                        <p className="text-[10px] sm:text-xs text-[#909E8D] -mt-1 sm:-mt-1.5">
+                        <p className="text-[10px] sm:text-xs text-[#800A06]/70 -mt-1 sm:-mt-1.5">
                           Please provide names and relationships for your <span className="font-semibold">{companions.length}</span> additional {companions.length === 1 ? 'guest' : 'guests'}
                         </p>
                         {companions.map((companion, index) => (
-                          <div key={index} className="bg-[#F4F4F4]/40 rounded-lg p-2 sm:p-2.5 md:p-3 border border-[#606C60]/40 space-y-2 sm:space-y-2.5">
+                          <div key={index} className="bg-white/70 rounded-lg p-2 sm:p-2.5 md:p-3 border border-[#800A06]/40 space-y-2 sm:space-y-2.5">
                             <div className="flex items-center gap-1.5 mb-1 sm:mb-1.5">
-                              <User className="h-3 w-3 sm:h-3.5 sm:w-3.5 text-[#606C60]" />
-                              <span className="text-[10px] sm:text-xs font-semibold text-[#606C60]">
+                              <User className="h-3 w-3 sm:h-3.5 sm:w-3.5 text-[#800A06]" />
+                              <span className="text-[10px] sm:text-xs font-semibold text-[#800A06]">
                                 Guest {index + 2}
                               </span>
                             </div>
                             <div className="space-y-1.5 sm:space-y-2">
                               <div>
-                                <label className="block text-[10px] sm:text-xs font-medium text-[#243127] mb-1">
+                                <label className="block text-[10px] sm:text-xs font-medium text-[#800A06] mb-1">
                                   Full Name
                                 </label>
                                 <input
@@ -747,11 +747,11 @@ export function GuestList() {
                                     setCompanions(newCompanions)
                                   }}
                                   placeholder={`Name of guest ${index + 2}`}
-                                  className="w-full px-2 sm:px-2.5 py-1.5 sm:py-2 border border-[#606C60]/50 focus:border-[#606C60] rounded text-[10px] sm:text-xs font-sans text-[#243127] placeholder:text-[#909E8D]/60 transition-all duration-300 focus:ring-1 focus:ring-[#606C60]/20 bg-white"
+                                  className="w-full px-2 sm:px-2.5 py-1.5 sm:py-2 border border-[#800A06]/50 focus:border-[#800A06] rounded text-[10px] sm:text-xs font-sans text-[#243127] placeholder:text-[#909E8D]/60 transition-all duration-300 focus:ring-1 focus:ring-[#800A06]/20 bg-white"
                                 />
                               </div>
                               <div>
-                                <label className="block text-[10px] sm:text-xs font-medium text-[#243127] mb-1">
+                                <label className="block text-[10px] sm:text-xs font-medium text-[#800A06] mb-1">
                                   Relationship with {selectedGuest?.Name || 'Primary Guest'}
                                 </label>
                                 <input
@@ -763,7 +763,7 @@ export function GuestList() {
                                     setCompanions(newCompanions)
                                   }}
                                   placeholder="e.g., Spouse, Friend, Child, Parent"
-                                  className="w-full px-2 sm:px-2.5 py-1.5 sm:py-2 border border-[#606C60]/50 focus:border-[#606C60] rounded text-[10px] sm:text-xs font-sans text-[#243127] placeholder:text-[#909E8D]/60 transition-all duration-300 focus:ring-1 focus:ring-[#606C60]/20 bg-white"
+                                  className="w-full px-2 sm:px-2.5 py-1.5 sm:py-2 border border-[#800A06]/50 focus:border-[#800A06] rounded text-[10px] sm:text-xs font-sans text-[#243127] placeholder:text-[#909E8D]/60 transition-all duration-300 focus:ring-1 focus:ring-[#800A06]/20 bg-white"
                                 />
                               </div>
                             </div>
@@ -774,8 +774,8 @@ export function GuestList() {
 
                     {/* Message to the couple */}
                     <div>
-                    <label className="flex items-center gap-1.5 sm:gap-2 text-xs sm:text-sm font-semibold text-[#606C60] mb-1.5 sm:mb-2 font-sans flex-wrap">
-                      <MessageSquare className="h-3.5 w-3.5 sm:h-4 sm:w-4 text-[#606C60] flex-shrink-0" />
+                    <label className="flex items-center gap-1.5 sm:gap-2 text-xs sm:text-sm font-semibold text-[#800A06] mb-1.5 sm:mb-2 font-sans flex-wrap">
+                      <MessageSquare className="h-3.5 w-3.5 sm:h-4 sm:w-4 text-[#800A06] flex-shrink-0" />
                         <span>Your Message to the Couple</span>
                       <span className="text-[10px] sm:text-xs font-normal text-[#606C60]/70">(Optional)</span>
                       </label>
@@ -785,14 +785,14 @@ export function GuestList() {
                         onChange={handleFormChange}
                         placeholder="Share your excitement..."
                         rows={3}
-                      className="w-full px-2.5 sm:px-3 py-1.5 sm:py-2 border-2 border-[#606C60]/60 focus:border-[#606C60] rounded-lg text-xs sm:text-sm font-sans text-[#243127] placeholder:text-[#909E8D]/70 transition-all duration-300 focus:ring-2 focus:ring-[#606C60]/20 resize-none bg-white"
+                      className="w-full px-2.5 sm:px-3 py-1.5 sm:py-2 border-2 border-[#800A06]/60 focus:border-[#800A06] rounded-lg text-xs sm:text-sm font-sans text-[#243127] placeholder:text-[#909E8D]/70 transition-all duration-300 focus:ring-2 focus:ring-[#800A06]/20 resize-none bg-white"
                       />
                     </div>
 
                     {/* Email */}
                     <div>
-                    <label className="flex items-center gap-1.5 sm:gap-2 text-xs sm:text-sm font-semibold text-[#606C60] mb-1.5 sm:mb-2 font-sans flex-wrap">
-                        <Mail className="h-3.5 w-3.5 sm:h-4 sm:w-4 text-[#606C60] flex-shrink-0" />
+                    <label className="flex items-center gap-1.5 sm:gap-2 text-xs sm:text-sm font-semibold text-[#800A06] mb-1.5 sm:mb-2 font-sans flex-wrap">
+                        <Mail className="h-3.5 w-3.5 sm:h-4 sm:w-4 text-[#800A06] flex-shrink-0" />
                         <span>Your Email Address</span>
                         <span className="text-[10px] sm:text-xs font-normal text-[#606C60]/70">(Optional)</span>
                       </label>
@@ -802,7 +802,7 @@ export function GuestList() {
                         value={formData.Email}
                         onChange={handleFormChange}
                         placeholder="your.email@example.com"
-                        className="w-full px-2.5 sm:px-3 py-1.5 sm:py-2 border-2 border-[#606C60]/60 focus:border-[#606C60] rounded-lg text-xs sm:text-sm font-sans text-[#243127] placeholder:text-[#909E8D]/70 transition-all duration-300 focus:ring-2 focus:ring-[#606C60]/20 bg-white"
+                        className="w-full px-2.5 sm:px-3 py-1.5 sm:py-2 border-2 border-[#800A06]/60 focus:border-[#800A06] rounded-lg text-xs sm:text-sm font-sans text-[#243127] placeholder:text-[#909E8D]/70 transition-all duration-300 focus:ring-2 focus:ring-[#800A06]/20 bg-white"
                       />
                     </div>
 
@@ -811,7 +811,7 @@ export function GuestList() {
                       <button
                         type="submit"
                         disabled={isLoading}
-                        className="w-full !bg-[#606C60] hover:!bg-[#606C60]/90 text-white py-2 sm:py-2.5 md:py-3 rounded-lg text-xs sm:text-sm font-semibold shadow-md transition-all duration-300 hover:shadow-lg disabled:opacity-70 flex items-center justify-center gap-1.5 sm:gap-2"
+                        className="w-full !bg-[#800A06] hover:!bg-[#671107] text-[#EFCA93] py-2 sm:py-2.5 md:py-3 rounded-lg text-xs sm:text-sm font-semibold shadow-md transition-all duration-300 hover:shadow-lg disabled:opacity-70 flex items-center justify-center gap-1.5 sm:gap-2"
                       >
                         {isLoading ? (
                           <>
@@ -820,7 +820,7 @@ export function GuestList() {
                           </>
                         ) : (
                           <>
-                            <Heart className="h-3.5 w-3.5 sm:h-4 sm:w-4" />
+                            <Heart className="h-3.5 w-3.5 sm:h-4 sm:w-4 text-[#EFCA93]" />
                             <span className="text-xs sm:text-sm">Submit RSVP</span>
                           </>
                         )}
@@ -832,53 +832,53 @@ export function GuestList() {
 
               {/* Enhanced Success Overlay */}
               {success && (
-                <div className="absolute inset-0 bg-[#BCCFC0]/98 backdrop-blur-md flex items-center justify-center z-50 animate-in fade-in duration-300 p-2 sm:p-3 md:p-4">
+                <div className="absolute inset-0 bg-[#EFCA93]/98 backdrop-blur-md flex items-center justify-center z-50 animate-in fade-in duration-300 p-2 sm:p-3 md:p-4">
                   <div className="text-center p-3 sm:p-4 md:p-5 lg:p-6 max-w-sm mx-auto">
                     {/* Enhanced Icon Circle */}
                     <div className="relative inline-flex items-center justify-center mb-3 sm:mb-4">
                       {/* Animated rings */}
-                      <div className="absolute inset-0 rounded-full border-2 border-[#8B3036]/20 animate-ping" />
-                      <div className="absolute inset-0 rounded-full border-2 border-[#8B3036]/30" />
+                      <div className="absolute inset-0 rounded-full border-2 border-[#800A06]/20 animate-ping" />
+                      <div className="absolute inset-0 rounded-full border-2 border-[#800A06]/30" />
                       {/* Icon container */}
                       <div className="relative w-12 h-12 sm:w-14 sm:h-14 md:w-16 md:h-16 lg:w-20 lg:h-20 bg-white rounded-full flex items-center justify-center shadow-xl">
-                        <CheckCircle className="h-6 w-6 sm:h-7 sm:w-7 md:h-8 md:w-8 lg:h-10 lg:w-10 text-[#BCCFC0]" strokeWidth={2.5} />
+                        <CheckCircle className="h-6 w-6 sm:h-7 sm:w-7 md:h-8 md:w-8 lg:h-10 lg:w-10 text-[#800A06]" strokeWidth={2.5} />
                       </div>
                     </div>
                     
                     {/* Title */}
-                    <h4 className="text-base sm:text-lg md:text-xl lg:text-2xl font-serif font-bold text-[#8B3036] mb-2 sm:mb-3">
+                    <h4 className="text-base sm:text-lg md:text-xl lg:text-2xl font-serif font-bold text-[#800A06] mb-2 sm:mb-3">
                       RSVP Confirmed!
                     </h4>
                     
                     {/* Message based on RSVP response */}
                     {formData.RSVP === "Yes" && (
                       <div className="space-y-1 sm:space-y-1.5 mb-2 sm:mb-3">
-                        <p className="text-[#8B3036]/95 text-xs sm:text-sm font-medium">
+                        <p className="text-[#800A06]/95 text-xs sm:text-sm font-medium">
                           We're thrilled you'll be joining us!
                         </p>
-                        <p className="text-[#8B3036]/80 text-[10px] sm:text-xs">
+                        <p className="text-[#800A06]/80 text-[10px] sm:text-xs">
                           Your response has been recorded
                         </p>
                       </div>
                     )}
                     {formData.RSVP === "No" && (
-                      <p className="text-[#8B3036]/90 text-xs sm:text-sm mb-2 sm:mb-3">
+                      <p className="text-[#800A06]/90 text-xs sm:text-sm mb-2 sm:mb-3">
                         We'll miss you, but thank you for letting us know.
                       </p>
                     )}
                     {!formData.RSVP && (
-                      <p className="text-[#8B3036]/90 text-xs sm:text-sm mb-2 sm:mb-3">
+                      <p className="text-[#800A06]/90 text-xs sm:text-sm mb-2 sm:mb-3">
                         Thank you for your response!
                       </p>
                     )}
                     
                     {/* Subtle closing indicator */}
                     <div className="flex items-center justify-center gap-1 sm:gap-1.5 mt-2 sm:mt-3">
-                      <div className="w-0.5 h-0.5 sm:w-1 sm:h-1 bg-[#8B3036]/60 rounded-full animate-pulse" />
-                      <p className="text-[#8B3036]/70 text-[10px] sm:text-xs">
+                      <div className="w-0.5 h-0.5 sm:w-1 sm:h-1 bg-[#800A06]/60 rounded-full animate-pulse" />
+                      <p className="text-[#800A06]/70 text-[10px] sm:text-xs">
                         This will close automatically
                       </p>
-                      <div className="w-0.5 h-0.5 sm:w-1 sm:h-1 bg-[#8B3036]/60 rounded-full animate-pulse" />
+                      <div className="w-0.5 h-0.5 sm:w-1 sm:h-1 bg-[#800A06]/60 rounded-full animate-pulse" />
                     </div>
                   </div>
                 </div>
@@ -906,22 +906,22 @@ export function GuestList() {
             onClick={handleCloseRequestModal}
           >
             <div 
-              className="relative w-full max-w-md sm:max-w-lg mx-1 sm:mx-2 md:mx-4 bg-white rounded-xl sm:rounded-2xl shadow-2xl border-2 border-[#606C60]/80 overflow-hidden animate-in zoom-in-95 duration-300 max-h-[95vh] flex flex-col"
+              className="relative w-full max-w-md sm:max-w-lg mx-1 sm:mx-2 md:mx-4 bg-[#EFCA93] rounded-xl sm:rounded-2xl shadow-2xl border-2 border-[#800A06] overflow-hidden animate-in zoom-in-95 duration-300 max-h-[95vh] flex flex-col"
               onClick={(e) => e.stopPropagation()}
             >
               {/* Modal Header with Gradient */}
-              <div className="relative bg-[#BCCFC0] p-3 sm:p-4 md:p-5 lg:p-6 flex-shrink-0">
+              <div className="relative bg-[#EFCA93] p-3 sm:p-4 md:p-5 lg:p-6 flex-shrink-0">
                 <div className="relative flex items-start justify-between gap-1.5 sm:gap-2">
                   <div className="flex-1 min-w-0">
                     <div className="flex items-center gap-1.5 sm:gap-2 md:gap-3 mb-1 sm:mb-1.5 md:mb-2 lg:mb-3">
                       <div className="w-5 h-5 sm:w-6 sm:h-6 md:w-8 md:h-8 lg:w-10 lg:h-10 bg-white/20 rounded-full flex items-center justify-center backdrop-blur-sm flex-shrink-0">
-                        <UserPlus className="h-2.5 w-2.5 sm:h-3 sm:w-3 md:h-4 md:w-4 lg:h-5 lg:w-5 text-[#606C60]" />
+                        <UserPlus className="h-2.5 w-2.5 sm:h-3 sm:w-3 md:h-4 md:w-4 lg:h-5 lg:w-5 text-[#800A06]" />
                       </div>
-                      <h3 className="text-sm sm:text-base md:text-xl lg:text-2xl xl:text-3xl font-serif font-bold text-[#606C60] truncate">
+                      <h3 className="text-sm sm:text-base md:text-xl lg:text-2xl xl:text-3xl font-serif font-bold text-[#800A06] truncate">
                         Request to Join
                       </h3>
                     </div>
-                    <p className="text-[#606C60]/95 text-[10px] sm:text-xs md:text-sm lg:text-base font-sans leading-tight sm:leading-normal">
+                    <p className="text-[#800A06] text-[10px] sm:text-xs md:text-sm lg:text-base font-sans leading-tight sm:leading-normal">
                       {requestFormData.Name ? (
                         <>Hi <span className="font-extrabold text-[#606C60]">{requestFormData.Name}</span> — want to celebrate with us? Send a request!</>
                       ) : (
@@ -931,9 +931,9 @@ export function GuestList() {
                   </div>
                   <button
                     onClick={handleCloseRequestModal}
-                    className="text-[#606C60]/80 hover:text-[#606C60] transition-colors p-0.5 sm:p-1 md:p-1.5 lg:p-2 hover:bg-white/20 rounded-full flex-shrink-0"
+                    className="text-[#800A06]/80 hover:text-[#800A06] transition-colors p-0.5 sm:p-1 md:p-1.5 lg:p-2 hover:bg-white/20 rounded-full flex-shrink-0"
                   >
-                    <X className="h-3.5 w-3.5 sm:h-4 sm:w-4 md:h-5 md:w-5 text-[#606C60]" />
+                    <X className="h-3.5 w-3.5 sm:h-4 sm:w-4 md:h-5 md:w-5 text-[#800A06]" />
                   </button>
                 </div>
               </div>
@@ -949,8 +949,8 @@ export function GuestList() {
                 >
                   {/* Name */}
                   <div>
-                    <label className="flex items-center gap-1.5 sm:gap-2 text-xs sm:text-sm font-semibold text-[#606C60] mb-1.5 sm:mb-2 font-sans">
-                      <User className="h-3.5 w-3.5 sm:h-4 sm:w-4 text-[#606C60] flex-shrink-0" />
+                    <label className="flex items-center gap-1.5 sm:gap-2 text-xs sm:text-sm font-semibold text-[#800A06] mb-1.5 sm:mb-2 font-sans">
+                      <User className="h-3.5 w-3.5 sm:h-4 sm:w-4 text-[#800A06] flex-shrink-0" />
                       <span>Full Name *</span>
                     </label>
                     <input
@@ -960,14 +960,14 @@ export function GuestList() {
                       onChange={(e) => setRequestFormData({ ...requestFormData, Name: e.target.value })}
                       required
                       placeholder="Enter your full name"
-                      className="w-full px-2.5 sm:px-3 py-1.5 sm:py-2 border-2 border-[#606C60]/60 focus:border-[#606C60] rounded-lg text-xs sm:text-sm font-sans text-[#243127] placeholder:text-[#909E8D]/70 transition-all duration-300 focus:ring-2 focus:ring-[#606C60]/20 bg-white"
+                      className="w-full px-2.5 sm:px-3 py-1.5 sm:py-2 border-2 border-[#800A06]/60 focus:border-[#800A06] rounded-lg text-xs sm:text-sm font-sans text-[#243127] placeholder:text-[#909E8D]/70 transition-all duration-300 focus:ring-2 focus:ring-[#800A06]/20 bg-white"
                     />
                   </div>
 
                   {/* Email */}
                   <div>
-                    <label className="flex items-center gap-1.5 sm:gap-2 text-xs sm:text-sm font-semibold text-[#606C60] mb-1.5 sm:mb-2 font-sans flex-wrap">
-                      <Mail className="h-3.5 w-3.5 sm:h-4 sm:w-4 text-[#606C60] flex-shrink-0" />
+                    <label className="flex items-center gap-1.5 sm:gap-2 text-xs sm:text-sm font-semibold text-[#800A06] mb-1.5 sm:mb-2 font-sans flex-wrap">
+                      <Mail className="h-3.5 w-3.5 sm:h-4 sm:w-4 text-[#800A06] flex-shrink-0" />
                       <span>Email Address</span>
                       <span className="text-[10px] sm:text-xs font-normal text-[#606C60]/70">(Optional)</span>
                     </label>
@@ -977,14 +977,14 @@ export function GuestList() {
                       value={requestFormData.Email}
                       onChange={(e) => setRequestFormData({ ...requestFormData, Email: e.target.value })}
                       placeholder="your.email@example.com"
-                      className="w-full px-2.5 sm:px-3 py-1.5 sm:py-2 border-2 border-[#606C60]/60 focus:border-[#606C60] rounded-lg text-xs sm:text-sm font-sans text-[#243127] placeholder:text-[#909E8D]/70 transition-all duration-300 focus:ring-2 focus:ring-[#606C60]/20 bg-white"
+                      className="w-full px-2.5 sm:px-3 py-1.5 sm:py-2 border-2 border-[#800A06]/60 focus:border-[#800A06] rounded-lg text-xs sm:text-sm font-sans text-[#243127] placeholder:text-[#909E8D]/70 transition-all duration-300 focus:ring-2 focus:ring-[#800A06]/20 bg-white"
                     />
                   </div>
 
                   {/* Phone */}
                   <div>
-                    <label className="flex items-center gap-1.5 sm:gap-2 text-xs sm:text-sm font-semibold text-[#606C60] mb-1.5 sm:mb-2 font-sans flex-wrap">
-                      <Phone className="h-3.5 w-3.5 sm:h-4 sm:w-4 text-[#606C60] flex-shrink-0" />
+                    <label className="flex items-center gap-1.5 sm:gap-2 text-xs sm:text-sm font-semibold text-[#800A06] mb-1.5 sm:mb-2 font-sans flex-wrap">
+                      <Phone className="h-3.5 w-3.5 sm:h-4 sm:w-4 text-[#800A06] flex-shrink-0" />
                       <span>Phone Number</span>
                       <span className="text-[10px] sm:text-xs font-normal text-[#606C60]/70">(Optional)</span>
                     </label>
@@ -994,14 +994,14 @@ export function GuestList() {
                       value={requestFormData.Phone}
                       onChange={(e) => setRequestFormData({ ...requestFormData, Phone: e.target.value })}
                       placeholder="+1 (555) 123-4567"
-                      className="w-full px-2.5 sm:px-3 py-1.5 sm:py-2 border-2 border-[#606C60]/60 focus:border-[#606C60] rounded-lg text-xs sm:text-sm font-sans text-[#243127] placeholder:text-[#909E8D]/70 transition-all duration-300 focus:ring-2 focus:ring-[#606C60]/20 bg-white"
+                      className="w-full px-2.5 sm:px-3 py-1.5 sm:py-2 border-2 border-[#800A06]/60 focus:border-[#800A06] rounded-lg text-xs sm:text-sm font-sans text-[#243127] placeholder:text-[#909E8D]/70 transition-all duration-300 focus:ring-2 focus:ring-[#800A06]/20 bg-white"
                     />
                   </div>
 
                   {/* Number of Guests */}
                   <div>
-                    <label className="flex items-center gap-1.5 sm:gap-2 text-xs sm:text-sm font-semibold text-[#606C60] mb-1.5 sm:mb-2 font-sans">
-                      <User className="h-3.5 w-3.5 sm:h-4 sm:w-4 text-[#606C60] flex-shrink-0" />
+                    <label className="flex items-center gap-1.5 sm:gap-2 text-xs sm:text-sm font-semibold text-[#800A06] mb-1.5 sm:mb-2 font-sans">
+                      <User className="h-3.5 w-3.5 sm:h-4 sm:w-4 text-[#800A06] flex-shrink-0" />
                       <span>Number of Guests *</span>
                     </label>
                     <input
@@ -1012,14 +1012,14 @@ export function GuestList() {
                       min="1"
                       required
                       placeholder="How many guests?"
-                      className="w-full px-2.5 sm:px-3 py-1.5 sm:py-2 border-2 border-[#606C60]/60 focus:border-[#606C60] rounded-lg text-xs sm:text-sm font-sans text-[#243127] placeholder:text-[#909E8D]/70 transition-all duration-300 focus:ring-2 focus:ring-[#606C60]/20 bg-white"
+                      className="w-full px-2.5 sm:px-3 py-1.5 sm:py-2 border-2 border-[#800A06]/60 focus:border-[#800A06] rounded-lg text-xs sm:text-sm font-sans text-[#243127] placeholder:text-[#909E8D]/70 transition-all duration-300 focus:ring-2 focus:ring-[#800A06]/20 bg-white"
                     />
                   </div>
 
                   {/* Message */}
                   <div>
-                    <label className="flex items-center gap-1.5 sm:gap-2 text-xs sm:text-sm font-semibold text-[#606C60] mb-1.5 sm:mb-2 font-sans flex-wrap">
-                      <MessageSquare className="h-3.5 w-3.5 sm:h-4 sm:w-4 text-[#606C60] flex-shrink-0" />
+                    <label className="flex items-center gap-1.5 sm:gap-2 text-xs sm:text-sm font-semibold text-[#800A06] mb-1.5 sm:mb-2 font-sans flex-wrap">
+                      <MessageSquare className="h-3.5 w-3.5 sm:h-4 sm:w-4 text-[#800A06] flex-shrink-0" />
                       <span>Message</span>
                         <span className="text-[10px] sm:text-xs font-normal text-[#606C60]/70">(Optional)</span>
                     </label>
@@ -1029,7 +1029,7 @@ export function GuestList() {
                       onChange={(e) => setRequestFormData({ ...requestFormData, Message: e.target.value })}
                       placeholder="Share why you'd like to join..."
                       rows={3}
-                        className="w-full px-2.5 sm:px-3 py-1.5 sm:py-2 border-2 border-[#606C60]/60 focus:border-[#606C60] rounded-lg text-xs sm:text-sm font-sans text-[#243127] placeholder:text-[#909E8D]/70 transition-all duration-300 focus:ring-2 focus:ring-[#606C60]/20 resize-none bg-white"
+                        className="w-full px-2.5 sm:px-3 py-1.5 sm:py-2 border-2 border-[#800A06]/60 focus:border-[#800A06] rounded-lg text-xs sm:text-sm font-sans text-[#243127] placeholder:text-[#909E8D]/70 transition-all duration-300 focus:ring-2 focus:ring-[#800A06]/20 resize-none bg-white"
                     />
                   </div>
 
@@ -1038,7 +1038,7 @@ export function GuestList() {
                     <button
                       type="submit"
                       disabled={isLoading}
-                      className="w-full !bg-[#606C60] hover:!bg-[#606C60]/90 text-white py-2 sm:py-2.5 md:py-3 rounded-lg text-xs sm:text-sm font-semibold shadow-md transition-all duration-300 hover:shadow-lg disabled:opacity-70 flex items-center justify-center gap-1.5 sm:gap-2"
+                      className="w-full !bg-[#800A06] hover:!bg-[#671107] text-[#EFCA93] py-2 sm:py-2.5 md:py-3 rounded-lg text-xs sm:text-sm font-semibold shadow-md transition-all duration-300 hover:shadow-lg disabled:opacity-70 flex items-center justify-center gap-1.5 sm:gap-2"
                     >
                       {isLoading ? (
                         <>
@@ -1047,7 +1047,7 @@ export function GuestList() {
                         </>
                       ) : (
                         <>
-                          <UserPlus className="h-3.5 w-3.5 sm:h-4 sm:w-4" />
+                          <UserPlus className="h-3.5 w-3.5 sm:h-4 sm:w-4 text-[#EFCA93]" />
                           <span className="text-xs sm:text-sm">Send Request</span>
                         </>
                       )}
@@ -1058,41 +1058,41 @@ export function GuestList() {
 
               {/* Enhanced Success Overlay */}
               {requestSuccess && (
-                <div className="absolute inset-0 bg-[#BCCFC0]/98 backdrop-blur-md flex items-center justify-center z-50 animate-in fade-in duration-300 p-2 sm:p-3 md:p-4">
+                <div className="absolute inset-0 bg-[#EFCA93]/98 backdrop-blur-md flex items-center justify-center z-50 animate-in fade-in duration-300 p-2 sm:p-3 md:p-4">
                   <div className="text-center p-3 sm:p-4 md:p-5 lg:p-6 max-w-sm mx-auto">
                     {/* Enhanced Icon Circle */}
                     <div className="relative inline-flex items-center justify-center mb-3 sm:mb-4">
                       {/* Animated rings */}
-                      <div className="absolute inset-0 rounded-full border-2 border-[#8B3036]/20 animate-ping" />
-                      <div className="absolute inset-0 rounded-full border-2 border-[#8B3036]/30" />
+                      <div className="absolute inset-0 rounded-full border-2 border-[#800A06]/20 animate-ping" />
+                      <div className="absolute inset-0 rounded-full border-2 border-[#800A06]/30" />
                       {/* Icon container */}
                       <div className="relative w-12 h-12 sm:w-14 sm:h-14 md:w-16 md:h-16 lg:w-20 lg:h-20 bg-white rounded-full flex items-center justify-center shadow-xl">
-                        <CheckCircle className="h-6 w-6 sm:h-7 sm:w-7 md:h-8 md:w-8 lg:h-10 lg:w-10 text-[#BCCFC0]" strokeWidth={2.5} />
+                        <CheckCircle className="h-6 w-6 sm:h-7 sm:w-7 md:h-8 md:w-8 lg:h-10 lg:w-10 text-[#800A06]" strokeWidth={2.5} />
                       </div>
                     </div>
                     
                     {/* Title */}
-                    <h4 className="text-base sm:text-lg md:text-xl lg:text-2xl font-serif font-bold text-[#8B3036] mb-2 sm:mb-3">
+                    <h4 className="text-base sm:text-lg md:text-xl lg:text-2xl font-serif font-bold text-[#800A06] mb-2 sm:mb-3">
                       Request Sent!
                     </h4>
                     
                     {/* Message */}
                     <div className="space-y-1 sm:space-y-1.5 mb-2 sm:mb-3">
-                      <p className="text-[#8B3036]/95 text-xs sm:text-sm font-medium">
+                      <p className="text-[#800A06]/95 text-xs sm:text-sm font-medium">
                         We've received your request
                       </p>
-                      <p className="text-[#8B3036]/85 text-[10px] sm:text-xs">
+                      <p className="text-[#800A06]/85 text-[10px] sm:text-xs">
                         We'll review it and get back to you soon
                       </p>
                     </div>
                     
                     {/* Subtle closing indicator */}
                     <div className="flex items-center justify-center gap-1 sm:gap-1.5 mt-2 sm:mt-3">
-                      <div className="w-0.5 h-0.5 sm:w-1 sm:h-1 bg-[#8B3036]/60 rounded-full animate-pulse" />
-                      <p className="text-[#8B3036]/70 text-[10px] sm:text-xs">
+                      <div className="w-0.5 h-0.5 sm:w-1 sm:h-1 bg-[#800A06]/60 rounded-full animate-pulse" />
+                      <p className="text-[#800A06]/70 text-[10px] sm:text-xs">
                         This will close automatically
                       </p>
-                      <div className="w-0.5 h-0.5 sm:w-1 sm:h-1 bg-[#8B3036]/60 rounded-full animate-pulse" />
+                      <div className="w-0.5 h-0.5 sm:w-1 sm:h-1 bg-[#800A06]/60 rounded-full animate-pulse" />
                     </div>
                   </div>
                 </div>
