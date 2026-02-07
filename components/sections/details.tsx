@@ -4,7 +4,6 @@ import { Section } from "@/components/section"
 import { Shirt, Copy, Check, Navigation, MapPin } from "lucide-react"
 import { useState } from "react"
 import Image from "next/image"
-import { QRCodeSVG } from "qrcode.react"
 import { siteConfig } from "@/content/site"
 
 export function Details() {
@@ -161,18 +160,20 @@ export function Details() {
                       {ceremonyAddress}
                     </p>
                   </div>
-                  {/* QR Code for Ceremony - Right side */}
+                  {/* WAZE QR for Ceremony - Right side */}
                   <div className="flex flex-col items-center gap-1.5 sm:gap-2 flex-shrink-0">
-                    <div className="bg-white p-1.5 sm:p-2 md:p-2.5 rounded-lg border border-[#9F8650]/20 shadow-sm">
-                      <QRCodeSVG
-                        value={ceremonyMapsLink}
-                        size={80}
-                        level="M"
-                        includeMargin={false}
-                        fgColor="#800A06"
-                        bgColor="#FFFFFF"
+                    <div className="bg-white p-1.5 sm:p-2 md:p-2.5 rounded-lg border border-[#9F8650]/20 shadow-sm relative w-20 h-20 sm:w-[88px] sm:h-[88px]">
+                      <Image
+                        src="/Details/WAZE Ceremony.png"
+                        alt="WAZE directions to ceremony"
+                        fill
+                        className="object-contain"
+                        sizes="88px"
                       />
                     </div>
+                    <p className="text-[9px] sm:text-[10px] md:text-xs font-[family-name:var(--font-crimson)] font-semibold text-[#800A06]/80 text-center">
+                      WAZE QR
+                    </p>
                     <p className="text-[9px] sm:text-[10px] md:text-xs font-[family-name:var(--font-crimson)] text-[#800A06]/60 italic text-center max-w-[80px]">
                       Scan for directions
                     </p>
@@ -279,18 +280,20 @@ export function Details() {
                       {receptionAddress}
                     </p>
                   </div>
-                  {/* QR Code for Reception - Right side */}
+                  {/* WAZE QR for Reception - Right side */}
                   <div className="flex flex-col items-center gap-1.5 sm:gap-2 flex-shrink-0">
-                    <div className="bg-white p-1.5 sm:p-2 md:p-2.5 rounded-lg border border-[#9F8650]/20 shadow-sm">
-                      <QRCodeSVG
-                        value={receptionMapsLink}
-                        size={80}
-                        level="M"
-                        includeMargin={false}
-                        fgColor="#800A06"
-                        bgColor="#FFFFFF"
+                    <div className="bg-white p-1.5 sm:p-2 md:p-2.5 rounded-lg border border-[#9F8650]/20 shadow-sm relative w-20 h-20 sm:w-[88px] sm:h-[88px]">
+                      <Image
+                        src="/Details/waze reception.png"
+                        alt="WAZE directions to reception"
+                        fill
+                        className="object-contain"
+                        sizes="88px"
                       />
                     </div>
+                    <p className="text-[9px] sm:text-[10px] md:text-xs font-[family-name:var(--font-crimson)] font-semibold text-[#800A06]/80 text-center">
+                      WAZE QR
+                    </p>
                     <p className="text-[9px] sm:text-[10px] md:text-xs font-[family-name:var(--font-crimson)] text-[#800A06]/60 italic text-center max-w-[80px]">
                       Scan for directions
                     </p>
@@ -434,10 +437,10 @@ export function Details() {
               {/* Guest Dress Code Text */}
               <div className="text-center pt-3 sm:pt-4 border-t border-[#A69E89]/20 px-3 sm:px-4">
                 <p className="text-sm sm:text-base md:text-lg lg:text-xl font-[family-name:var(--font-crimson)] text-[#7C745F] leading-relaxed mb-3 sm:mb-4">
-                  <span className="font-semibold">Ladies:</span> Formal or Semi-Formal attire in colors from our palette
+                  <span className="font-semibold">Ladies:</span> Semi-Formal attire in colors from our palette
                 </p>
                 <p className="text-sm sm:text-base md:text-lg lg:text-xl font-[family-name:var(--font-crimson)] text-[#7C745F] leading-relaxed">
-                  <span className="font-semibold">Gentlemen:</span> Formal or Semi-Formal attire in colors from our palette
+                  <span className="font-semibold">Gentlemen:</span> Semi-Formal attire in colors from our palette
                 </p>
               </div>
             </div>
@@ -466,20 +469,6 @@ export function Details() {
               <div className="bg-gradient-to-br from-[#F9F8F4]/30 via-[#F9F8F4]/20 to-white rounded-xl p-5 sm:p-6 md:p-7 border border-[#9F8650]/20">
                 <p className="text-sm sm:text-base md:text-lg font-[family-name:var(--font-crimson)] text-[#800A06] leading-relaxed">
                   <span className="font-semibold">Gift Policy:</span> We kindly ask for no boxed gifts. Monetary gifts are welcome but never expected.
-                </p>
-              </div>
-
-              {/* Adults Only */}
-              <div className="bg-gradient-to-br from-[#F9F8F4]/30 via-[#F9F8F4]/20 to-white rounded-xl p-5 sm:p-6 md:p-7 border border-[#9F8650]/20">
-                <p className="text-sm sm:text-base md:text-lg font-[family-name:var(--font-crimson)] text-[#800A06] leading-relaxed">
-                  <span className="font-semibold">Adults-Only Event:</span> We love your little ones, but to keep the celebration intimate, we kindly request an adults-only event. (Children in our family and the entourage are the exception)
-                </p>
-              </div>
-
-              {/* No Photos */}
-              <div className="bg-gradient-to-br from-[#F9F8F4]/30 via-[#F9F8F4]/20 to-white rounded-xl p-5 sm:p-6 md:p-7 border border-[#9F8650]/20">
-                <p className="text-sm sm:text-base md:text-lg font-[family-name:var(--font-crimson)] text-[#800A06] leading-relaxed">
-                  <span className="font-semibold">Photo Policy:</span> We'd love for everyone to be fully present. Please avoid posting photos during the celebration or ahead of time—our photographers will take care of the memories.
                 </p>
               </div>
 

@@ -21,8 +21,9 @@ export const siteConfig = {
     },
   },
   ceremony: {
-    location: "Talisay, Lipa City, Batangas",
-    venue: "St. Therese of the Jesus Child Parish",
+    location: "St. Therese of the Child Jesus and the Holy Face Parish Church",
+    address: "X5CW+88P, Santo Tomas-Lipa Rd, Talisay, Lipa City, 4217 Batangas, Philippines",
+    venue: "St. Therese of the Child Jesus and the Holy Face Parish Church",
     date: "March 21 2026",
     day: "Saturday",
     time: "9:30 AM",
@@ -30,8 +31,9 @@ export const siteConfig = {
     guestsTime: "8:30 AM",
   },
   reception: {
-    location: "Santo Tomas - Lipa Road, Lipa City, Batangas",
-    venue: "The Events Place by RML",
+    location: "RML Garden Resort and Pavilion",
+    address: "Santo Tomas - Lipa Rd, Lipa, Philippines",
+    venue: "RML Garden Resort and Pavilion",
     date: "March 21, 2026",
     time: "12:00 PM",
   },
@@ -46,7 +48,7 @@ export const siteConfig = {
       gents: "Barong Tagalog | Puting Panloob | Itim na Pantalon | Itim na sapatos",
       ladies: "Modern Filipiniana or Traje de Mestiza"
     },
-    note: "We kindly request our guests to dress in formal attire following our Modern Filipiniana theme."
+    note: "We kindly request our guests to dress in semi-formal attire following our Modern Filipiniana theme."
   },
   narratives: {
     ourStory: `God works in mysterious ways — sometimes He starts a story in the most ordinary moments. We had no idea that what began so simply would become the greatest adventure of our lives.`,
