@@ -26,7 +26,7 @@ export function Hero() {
       className="relative min-h-screen flex items-center justify-center overflow-hidden"
     >
       {/* Corner Decorations */}
-      {[
+      {/* {[
         { key: 'tl', className: 'top-0 left-0 scale-x-[-1]' },
         { key: 'tr', className: 'top-0 right-0' },
         { key: 'bl', className: 'bottom-0 left-0 scale-x-[-1] scale-y-[-1]' },
@@ -43,7 +43,7 @@ export function Hero() {
             className="w-44 sm:w-52 md:w-60 lg:w-72 xl:w-80 2xl:w-96 h-auto opacity-80"
           />
         </div>
-      ))}
+      ))} */}
 
       <div className="relative z-10 w-full container mx-auto px-4 sm:px-6 md:px-8 lg:px-12 xl:px-16 flex flex-col items-center justify-center min-h-screen py-16 sm:py-20">
         {/* Elegant Card Container */}
