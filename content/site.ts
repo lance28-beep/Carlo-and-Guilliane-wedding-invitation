@@ -28,7 +28,7 @@ export const siteConfig = {
     day: "Saturday",
     time: "9:30 AM",
     entourageTime: "9:00 AM",
-    guestsTime: "8:30 AM",
+    guestsTime: "9:00 AM",
   },
   reception: {
     location: "RML Garden Resort and Pavilion",
