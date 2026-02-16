@@ -108,7 +108,7 @@ export function Hero() {
           <div className="space-y-3 pt-4 sm:pt-6 px-4">
             <div className="flex items-center justify-center gap-3 sm:gap-4">
               <div className="h-[1px] w-12 sm:w-16 md:w-20 bg-gradient-to-r from-transparent via-[#9F8650] to-[#9F8650]" />
-              <p className="text-base sm:text-lg md:text-xl lg:text-2xl font-[family-name:var(--font-dialtones)] font-normal text-[#9F8650] tracking-wider">
+              <p className="text-base sm:text-lg md:text-xl lg:text-2xl font-[family-name:var(--font-cinzel)] font-normal text-[#9F8650] tracking-wider uppercase">
                 March
               </p>
               <div className="h-[1px] w-12 sm:w-16 md:w-20 bg-gradient-to-l from-transparent via-[#9F8650] to-[#9F8650]" />
@@ -150,9 +150,7 @@ export function Hero() {
               <p className="text-sm sm:text-base md:text-lg lg:text-xl font-[family-name:var(--font-cinzel)] font-normal text-[#9F8650] uppercase tracking-wider">
                 {ceremonyVenue}
               </p>
-              <p className="text-xs sm:text-sm md:text-base font-[family-name:var(--font-cinzel)] font-normal text-[#9B4719]/80">
-                {ceremonyAddress}
-              </p>
+  
             </div>
 
             <div className="flex items-center justify-center gap-2">
@@ -165,9 +163,7 @@ export function Hero() {
               <p className="text-sm sm:text-base md:text-lg lg:text-xl font-[family-name:var(--font-cinzel)] font-normal text-[#9B4719] uppercase tracking-wider">
                 {receptionVenue}
               </p>
-              <p className="text-xs sm:text-sm md:text-base font-[family-name:var(--font-cinzel)] font-normal text-[#9B4719]/80">
-                {receptionAddress}
-              </p>
+
             </div>
           </div>
 

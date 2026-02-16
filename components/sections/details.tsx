@@ -391,7 +391,7 @@ export function Details() {
                   <span className="font-semibold">Ninangs:</span> Long gowns in autumn tones or any color from our palette
                 </p>
                 <p className="text-sm sm:text-base md:text-lg lg:text-xl font-[family-name:var(--font-crimson)] text-[#7C745F] leading-relaxed">
-                  <span className="font-semibold">Ninongs:</span> Barong Tagalog with black slacks, or formal suits in black or palette colors
+                  <span className="font-semibold">Ninongs:</span> Barong Tagalog with black slacks.
                 </p>
               </div>
             </div>

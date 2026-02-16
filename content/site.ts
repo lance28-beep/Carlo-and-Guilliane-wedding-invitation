@@ -15,9 +15,9 @@ export const siteConfig = {
   },
   details: {
     rsvp: {
-      deadline: "July 01, 2026",
-      contact: "Monique Ogalesco",
-      phone: "647-622-5353",
+      deadline: "February 28, 2026",
+      contact: "Guilliane Arias",
+      phone: "09171344743",
     },
   },
   ceremony: {

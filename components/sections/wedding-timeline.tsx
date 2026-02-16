@@ -39,7 +39,7 @@ interface TimelineEvent {
 
 const timelineEvents: TimelineEvent[] = [
   {
-    time: guestsTime,
+    time: "9:00 AM",
     title: "Arrival",
     description: "Please arrive on time to find your seat, settle in, and get ready for the celebration.",
     location: ceremonyVenue,
@@ -47,23 +47,23 @@ const timelineEvents: TimelineEvent[] = [
     imageSrc: "/weddingtimeline/arrivalimage.png",
   },
   {
-    time: ceremonyTime,
-    title: "Wedding Ceremony",
+    time: "9:30 AM",
+    title: "Processional",
     description: `Join us as ${groomNickname} & ${brideNickname} exchange vows and begin their life together.`,
     location: ceremonyVenue,
     icon: RingsIcon,
     imageSrc: "/weddingtimeline/WeddingCeremony.png",
   },
   {
-    time: siteConfig.reception.time,
-    title: "Cocktail Hour",
+    time: "11:30 AM",
+    title: "Cocktails",
     description: "Enjoy drinks and light bites as we transition into the reception and mingle with guests.",
     location: receptionVenue,
     icon: CocktailIcon,
     imageSrc: "/weddingtimeline/CockTailHour.png",
   },
   {
-    time: "6:00 PM",
+    time: "12:30 PM",
     title: "Program Starts",
     description: `Celebrate the grand entrance of ${groomNickname} & ${brideNickname} and the start of the evening festivities.`,
     location: receptionVenue,
@@ -71,16 +71,16 @@ const timelineEvents: TimelineEvent[] = [
     imageSrc: "/weddingtimeline/reception welcom.png",
   },
   {
-    time: "7:00 PM",
-    title: "Dinner Service",
+    time: "1:30 PM",
+    title: "Lunch",
     description: "Share a relaxed meal together as we continue the celebration.",
     location: receptionVenue,
     icon: DinnerIcon,
     imageSrc: "/weddingtimeline/DinnerService.png",
   },
   {
-    time: "9:00 PM",
-    title: "Send-off",
+    time: "2:30 PM",
+    title: "Send off",
     description: `Help us send off ${groomNickname} & ${brideNickname} with love and well-wishes.`,
     location: receptionVenue,
     icon: CarIcon,

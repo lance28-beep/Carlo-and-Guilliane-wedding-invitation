@@ -48,11 +48,6 @@ const faqItems: FAQItem[] = [
       "Each invitation includes a specific number of reserved seats. Please check your invitation details in the RSVP section. If you need to request additional seats, you can use the 'Request to Join' feature, and we'll do our best to accommodate based on availability.",
   },
   {
-    question: "Can I bring my children?",
-    answer:
-      "While we love your little ones, we kindly request an adults-only celebration so everyone can relax and enjoy the evening.",
-  },
-  {
     question: "Is there a dress code?",
     answer:
       `Wedding ATTIRE found in guest details section.\n\nAttire guide\nStrictly semi formal/ formal attire\n\nWe know many like to come dressed to compliment the big day. Provided below is the color palette of our day. We look forward to seeing you all!`,
@@ -71,11 +66,6 @@ const faqItems: FAQItem[] = [
     question: "What should I give as a gift?",
     answer:
       "With all that we have, we are truly blessed. Your presence and prayers are what we request most. However, if you desire to give nonetheless, a monetary gift to help us begin our new life together would be humbly appreciated. You can find our gift registry information in the Gift Guide section.",
-  },
-  {
-    question: "Can I take photos and videos during the ceremony?",
-    answer:
-      "We have a professional photographer and videographer capturing our special moments. We kindly ask that you keep your phones on silent and refrain from taking photos during the ceremony. However, we'd love to see your photos and videos from the reception! Please check the Snap & Share section for details on how to upload them.",
   },
   {
     question: "What if I have dietary restrictions or allergies?",
