@@ -25,6 +25,7 @@ import { AppState } from "@/components/types"
 import BackgroundMusic from "@/components/background-music"
 import { SnapShare } from "@/components/sections/snap-share"
 import { CoupleVideo } from "@/components/sections/couple-video"
+import { RSVP } from "@/components/sections/rsvp"
 
 const Silk = dynamic(() => import("@/components/silk"), { ssr: false })
 const GuestList = dynamic(() => import("@/components/sections/guest-list").then(mod => ({ default: mod.GuestList })), { ssr: false })
@@ -74,8 +75,9 @@ export default function Home() {
               <Entourage />
               <WeddingTimeline />
               {/* <PrincipalSponsors /> */}
-              <GuestList />
-              <BookOfGuests />
+              {/* <GuestList />
+              <BookOfGuests /> */}
+              <RSVP />
               <FAQ />
               <Registry />
               <SnapShare />

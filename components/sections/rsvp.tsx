@@ -5,7 +5,17 @@ import { Section } from "@/components/section"
 import { Button } from "@/components/ui/button"
 import { Heart, CheckCircle, AlertCircle, User, Users, MessageSquare } from "lucide-react"
 import { siteConfig } from "@/content/site"
-// import { siteContent } from "@/lib/content"
+import { Cormorant_Garamond, Cinzel } from "next/font/google"
+
+const cormorant = Cormorant_Garamond({
+  subsets: ["latin"],
+  weight: ["400", "500", "600", "700"],
+})
+
+const cinzel = Cinzel({
+  subsets: ["latin"],
+  weight: ["400", "500", "600", "700"],
+})
 
 interface RSVPFormProps {
   onSuccess?: () => void
@@ -35,7 +45,7 @@ export function RSVP({ onSuccess }: RSVPFormProps) {
 
     try {
       await fetch(
-        "https://docs.google.com/forms/d/e/1FAIpQLSe3_xvq3VBMu3TWcnrhM1FKoSmSuBgdlVaq4e63px8Y3mekgA/formResponse",
+        "https://docs.google.com/forms/d/e/1FAIpQLSdIVAeJQ3SuqPEShhWeob136H7gpcnxgW4ubpjEMp06MhcGQQ/formResponse",
         {
           method: "POST",
           mode: "no-cors",
@@ -57,77 +67,77 @@ export function RSVP({ onSuccess }: RSVPFormProps) {
   }
 
   return (
-    <Section id="rsvp" className="relative py-24 md:py-36 overflow-hidden">
+    <Section id="rsvp" className="relative py-16 sm:py-24 md:py-36 overflow-hidden">
       {/* Decorative background elements (transparent section) */}
       <div className="absolute inset-0 pointer-events-none">
-        <div className="absolute top-10 left-10 w-24 h-24 bg-[#BB8A3D]/10 rounded-full blur-2xl animate-pulse" />
-        <div className="absolute top-20 right-20 w-20 h-20 bg-[#CDAC77]/15 rounded-full blur-xl animate-pulse" />
-        <div className="absolute bottom-20 left-20 w-28 h-28 bg-[#BB8A3D]/8 rounded-full blur-2xl animate-pulse" />
-        <div className="absolute bottom-10 right-10 w-16 h-16 bg-[#CDAC77]/12 rounded-full blur-lg animate-pulse" />
-        <div className="absolute top-1/4 left-0 w-full h-px bg-gradient-to-r from-transparent via-[#BB8A3D]/30 to-transparent" />
-        <div className="absolute bottom-1/4 left-0 w-full h-px bg-gradient-to-r from-transparent via-[#CDAC77]/25 to-transparent" />
+        <div className="absolute top-10 left-10 w-24 h-24 bg-[#800A06]/5 rounded-full blur-2xl animate-pulse" />
+        <div className="absolute top-20 right-20 w-20 h-20 bg-[#9F8650]/10 rounded-full blur-xl animate-pulse" />
+        <div className="absolute bottom-20 left-20 w-28 h-28 bg-[#800A06]/5 rounded-full blur-2xl animate-pulse" />
+        <div className="absolute bottom-10 right-10 w-16 h-16 bg-[#9F8650]/8 rounded-full blur-lg animate-pulse" />
+        <div className="absolute top-1/4 left-0 w-full h-px bg-gradient-to-r from-transparent via-[#800A06]/20 to-transparent" />
+        <div className="absolute bottom-1/4 left-0 w-full h-px bg-gradient-to-r from-transparent via-[#9F8650]/20 to-transparent" />
         {/* Corner flowers (same asset, oriented per corner) */}
         {/* Top-right (base) */}
         <img
           src="/decoration/corner_right-top.png"
           alt=""
           aria-hidden="true"
-          className="absolute top-0 right-0 w-40 sm:w-56 md:w-64 lg:w-72 opacity-80 select-none"
+          className="absolute top-0 right-0 w-24 sm:w-40 sm:w-56 md:w-64 lg:w-72 opacity-60 select-none mix-blend-multiply"
         />
         {/* Top-left (mirror horizontally) */}
         <img
           src="/decoration/corner_right-top.png"
           alt=""
           aria-hidden="true"
-          className="absolute top-0 left-0 w-40 sm:w-56 md:w-64 lg:w-72 opacity-80 select-none transform scale-x-[-1]"
+          className="absolute top-0 left-0 w-24 sm:w-40 sm:w-56 md:w-64 lg:w-72 opacity-60 select-none transform scale-x-[-1] mix-blend-multiply"
         />
         {/* Bottom-left (rotate 180) */}
         <img
           src="/decoration/corner_right-top.png"
           alt=""
           aria-hidden="true"
-          className="absolute bottom-0 left-0 w-40 sm:w-56 md:w-64 lg:w-72 opacity-80 select-none rotate-180"
+          className="absolute bottom-0 left-0 w-24 sm:w-40 sm:w-56 md:w-64 lg:w-72 opacity-60 select-none rotate-180 mix-blend-multiply"
         />
         {/* Bottom-right (rotate 180 + mirror) */}
         <img
           src="/decoration/corner_right-top.png"
           alt=""
           aria-hidden="true"
-          className="absolute bottom-0 right-0 w-40 sm:w-56 md:w-64 lg:w-72 opacity-80 select-none transform rotate-180 scale-x-[-1]"
+          className="absolute bottom-0 right-0 w-24 sm:w-40 sm:w-56 md:w-64 lg:w-72 opacity-60 select-none transform rotate-180 scale-x-[-1] mix-blend-multiply"
         />
       </div>
 
       <div className="relative z-20 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Enhanced Header */}
         <div className="text-center mb-12 md:mb-20">
-          <h2 className="text-3xl sm:text-4xl md:text-7xl lg:text-8xl font-serif font-bold text-[#FFF6E7] mb-4 md:mb-6 text-balance drop-shadow-lg relative overflow-visible">
-            <span className="relative z-10 bg-clip-text text-transparent bg-gradient-to-br from-[#BB8A3D] via-[#CDAC77] to-[#FFF6E7]">RSVP</span>
-            <span className="absolute -inset-x-3 -inset-y-4 text-[#BB8A3D]/25 blur-[28px] -z-10 select-none pointer-events-none">RSVP</span>
+          <h2 className={`${cinzel.className} text-xl sm:text-4xl md:text-7xl lg:text-8xl font-normal text-white mb-4 md:mb-6 text-balance drop-shadow-sm relative overflow-visible uppercase tracking-widest`}>
+            <span className="relative z-10">RSVP</span>
+            <span className="absolute -inset-x-3 -inset-y-4 text-white/5 blur-[8px] -z-10 select-none pointer-events-none">RSVP</span>
           </h2>
           {/* Decorative divider under title */}
           <div className="flex items-center justify-center gap-3 md:gap-4 mb-2 md:mb-4">
-            <div className="w-10 sm:w-16 h-px bg-gradient-to-r from-transparent via-[#BB8A3D]/60 to-[#CDAC77]/30" />
-            <div className="w-2 h-2 rounded-full bg-[#BB8A3D]" />
-            <div className="w-10 sm:w-16 h-px bg-gradient-to-l from-transparent via-[#BB8A3D]/60 to-[#CDAC77]/30" />
+            <div className="w-10 sm:w-16 h-px bg-gradient-to-r from-transparent via-[#800A06]/60 to-[#9F8650]/30" />
+            <div className="w-2 h-2 rounded-full bg-[#800A06]" />
+            <div className="w-10 sm:w-16 h-px bg-gradient-to-l from-transparent via-[#800A06]/60 to-[#9F8650]/30" />
           </div>
 
           {/* Elegant Card */}
           <div className="max-w-3xl mx-auto px-2 sm:px-4">
             <div className="relative">
               {/* Decorative Background */}
-              <div className="absolute inset-0 bg-gradient-to-br from-[#BB8A3D]/10 via-[#CDAC77]/15 to-[#FFF6E7]/5 rounded-2xl blur-xl -z-10"></div>
+              <div className="absolute inset-0 bg-gradient-to-br from-[#800A06]/5 via-[#9F8650]/10 to-[#F9F8F4]/5 rounded-2xl blur-xl -z-10"></div>
               
-              <div className="bg-white/90 backdrop-blur-md rounded-2xl p-6 sm:p-10 md:p-12 border border-[#BB8A3D]/30 shadow-2xl">
+              <div className="bg-white/90 backdrop-blur-md rounded-2xl p-6 sm:p-10 md:p-12 border border-[#800A06]/20 shadow-xl">
                 <div className="flex items-center justify-center gap-2 md:gap-3 mb-3 md:mb-4">
   
-                  <h3 className="text-xl sm:text-3xl md:text-4xl font-sans font-bold text-[#402921]">
+                  <h3 className={`${cinzel.className} text-base sm:text-3xl md:text-4xl font-bold text-[#800A06] uppercase tracking-wide`}>
                     We Reserved Seats for You
                   </h3>
                 </div>
                 
-                <p className="text-sm sm:text-lg md:text-xl text-[#402921]/80 font-sans font-light leading-relaxed">
+                <p className={`${cormorant.className} text-sm sm:text-lg md:text-xl text-[#800A06]/80 font-light leading-relaxed`}>
                   The favor of your reply is kindly requested on or before{" "}
-                  <span className="font-semibold text-[#402921] bg-[#402921]/10 px-2 py-1 rounded-lg text-sm md:text-base">
+                  <span className="font-semibold text-[#800A06] bg-[#800A06]/5 px-2 py-1 rounded-lg text-sm md:text-base border border-[#800A06]/10">
                     {siteConfig.details.rsvp.deadline}
                   </span>
                 </p>
@@ -142,12 +152,12 @@ export function RSVP({ onSuccess }: RSVPFormProps) {
             {/* Form Background */}
             <div className="absolute inset-0 bg-gradient-to-br from-white/95 to-white/90 rounded-3xl blur-sm -z-10"></div>
             
-            <div className="bg-white/95 backdrop-blur-md rounded-3xl p-6 sm:p-10 md:p-12 shadow-2xl border border-[#BB8A3D]/20">
+            <div className="bg-white/95 backdrop-blur-md rounded-3xl p-6 sm:p-10 md:p-12 shadow-2xl border border-[#800A06]/20">
               <form ref={formRef} onSubmit={handleSubmit} className="space-y-5 sm:space-y-9">
                 {/* Full Name Field */}
                 <div className="space-y-1 sm:space-y-3">
-                  <label className="flex items-center gap-2 text-xs sm:text-base font-medium text-[#402921] font-sans">
-                    <User className="h-3 w-3 sm:h-4 sm:w-4" />
+                  <label className={`${cormorant.className} flex items-center gap-2 text-xs sm:text-lg font-semibold text-[#800A06]`}>
+                    <User className="h-4 w-4 sm:h-5 sm:w-5" />
                     Full Name *
                   </label>
                   <div className="relative">
@@ -155,23 +165,22 @@ export function RSVP({ onSuccess }: RSVPFormProps) {
                       name="name"
                       required
                       placeholder="Enter your full name"
-                      className="w-full px-3 sm:px-6 py-2 sm:py-4 border-2 border-[#402921]/20 focus:border-[#402921] rounded-lg sm:rounded-2xl text-sm sm:text-lg font-sans placeholder:text-[#402921]/40 transition-all duration-300 hover:border-[#402921]/40 focus:ring-4 focus:ring-[#402921]/10 bg-white/80 backdrop-blur-sm"
+                      className={`${cormorant.className} w-full px-3 sm:px-6 py-2 sm:py-4 border border-[#800A06]/20 focus:border-[#800A06] rounded-lg sm:rounded-xl text-base sm:text-xl placeholder:text-[#800A06]/30 transition-all duration-300 hover:border-[#800A06]/40 focus:ring-4 focus:ring-[#800A06]/5 bg-white/80 backdrop-blur-sm outline-none`}
                     />
-                    <div className="absolute inset-0 rounded-lg sm:rounded-2xl bg-gradient-to-r from-primary/5 to-secondary/5 opacity-0 hover:opacity-100 transition-opacity duration-300 pointer-events-none"></div>
                   </div>
                 </div>
 
                 {/* Number of Guests Field */}
                 <div className="space-y-1.5 sm:space-y-3.5">
-                  <label className="flex items-center gap-2 text-xs sm:text-base font-medium text-[#402921] font-sans">
-                    <Users className="h-3 w-3 sm:h-4 sm:w-4" />
+                  <label className={`${cormorant.className} flex items-center gap-2 text-xs sm:text-lg font-semibold text-[#800A06]`}>
+                    <Users className="h-4 w-4 sm:h-5 sm:w-5" />
                     Number of Guests *
                   </label>
                   <div className="relative">
                     <select
                       name="guests"
                       required
-                      className="w-full px-3 sm:px-6 py-2.5 sm:py-4 border-2 border-[#402921]/20 focus:border-[#402921] rounded-lg sm:rounded-2xl text-sm sm:text-lg font-sans bg-white/80 backdrop-blur-sm transition-all duration-300 hover:border-[#402921]/40 focus:ring-4 focus:ring-[#402921]/10 cursor-pointer appearance-none"
+                      className={`${cormorant.className} w-full px-3 sm:px-6 py-2.5 sm:py-4 border border-[#800A06]/20 focus:border-[#800A06] rounded-lg sm:rounded-xl text-base sm:text-xl bg-white/80 backdrop-blur-sm transition-all duration-300 hover:border-[#800A06]/40 focus:ring-4 focus:ring-[#800A06]/5 cursor-pointer appearance-none text-[#800A06] outline-none`}
                     >
                       <option value="">Select number of guests</option>
                       <option value="1">1 Guest</option>
@@ -180,14 +189,13 @@ export function RSVP({ onSuccess }: RSVPFormProps) {
                       <option value="4">4 Guests</option>
                       <option value="5">5 Guests</option>
                     </select>
-                    <div className="absolute inset-0 rounded-lg sm:rounded-2xl bg-gradient-to-r from-primary/5 to-secondary/5 opacity-0 hover:opacity-100 transition-opacity duration-300 pointer-events-none"></div>
                   </div>
                 </div>
 
                 {/* Message Field */}
                 <div className="space-y-1.5 sm:space-y-3.5">
-                  <label className="flex items-center gap-2 text-xs sm:text-base font-medium text-[#402921] font-sans">
-                    <MessageSquare className="h-3 w-3 sm:h-4 sm:w-4" />
+                  <label className={`${cormorant.className} flex items-center gap-2 text-xs sm:text-lg font-semibold text-[#800A06]`}>
+                    <MessageSquare className="h-4 w-4 sm:h-5 sm:w-5" />
                     Message (Optional)
                   </label>
                   <div className="relative">
@@ -195,9 +203,8 @@ export function RSVP({ onSuccess }: RSVPFormProps) {
                       name="message"
                       placeholder="Any special requests or dietary restrictions?"
                       rows={3}
-                      className="w-full px-3 sm:px-6 py-2.5 sm:py-4 border-2 border-[#402921]/20 focus:border-[#402921] rounded-lg sm:rounded-2xl min-h-[100px] sm:min-h-[160px] text-sm sm:text-lg font-sans placeholder:text-[#402921]/40 transition-all duration-300 hover:border-[#402921]/40 focus:ring-4 focus:ring-[#402921]/10 resize-none bg-white/80 backdrop-blur-sm"
+                      className={`${cormorant.className} w-full px-3 sm:px-6 py-2.5 sm:py-4 border border-[#800A06]/20 focus:border-[#800A06] rounded-lg sm:rounded-xl min-h-[100px] sm:min-h-[160px] text-base sm:text-xl placeholder:text-[#800A06]/30 transition-all duration-300 hover:border-[#800A06]/40 focus:ring-4 focus:ring-[#800A06]/5 resize-none bg-white/80 backdrop-blur-sm outline-none`}
                     />
-                    <div className="absolute inset-0 rounded-lg sm:rounded-2xl bg-gradient-to-r from-primary/5 to-secondary/5 opacity-0 hover:opacity-100 transition-opacity duration-300 pointer-events-none"></div>
                   </div>
                 </div>
 
@@ -206,7 +213,7 @@ export function RSVP({ onSuccess }: RSVPFormProps) {
                   <Button
                     type="submit"
                     disabled={isSubmitting}
-                    className="w-full bg-gradient-to-r from-[#402921] via-[#583016] to-[#402921] hover:from-[#583016] hover:to-[#583016] text-[#FFF6E7] border-2 border-[#FFF6E7] px-6 sm:px-10 py-3 sm:py-5 rounded-lg sm:rounded-2xl text-base sm:text-xl font-sans font-semibold shadow-2xl transition-all duration-300 hover:shadow-3xl hover:scale-[1.02] active:scale-[0.98] disabled:opacity-70 disabled:cursor-not-allowed relative overflow-hidden tracking-wide"
+                    className={`w-full bg-gradient-to-r from-[#800A06] to-[#9B4719] hover:from-[#9B4719] hover:to-[#800A06] text-white border-none px-6 sm:px-10 py-3 sm:py-5 rounded-lg sm:rounded-xl text-sm sm:text-xl ${cinzel.className} font-semibold shadow-lg transition-all duration-300 hover:shadow-xl hover:scale-[1.02] active:scale-[0.98] disabled:opacity-70 disabled:cursor-not-allowed relative overflow-hidden tracking-wider`}
                   >
                     <div className="absolute inset-0 bg-gradient-to-r from-white/20 to-transparent opacity-0 hover:opacity-100 transition-opacity duration-300"></div>
                     {isSubmitting ? (
@@ -228,28 +235,28 @@ export function RSVP({ onSuccess }: RSVPFormProps) {
 
                 {/* Enhanced Status Messages */}
                 {isSubmitted && (
-                  <div className="text-center mt-4 sm:mt-6 p-3 sm:p-6 bg-gradient-to-r from-green-50 to-green-100 border-2 border-green-200 rounded-lg sm:rounded-2xl backdrop-blur-sm">
+                  <div className="text-center mt-4 sm:mt-6 p-3 sm:p-6 bg-green-50/80 border border-green-200 rounded-lg sm:rounded-xl backdrop-blur-sm">
                     <div className="flex items-center justify-center gap-2 sm:gap-3 mb-2 sm:mb-3">
-                      <div className="bg-green-500/20 p-1 sm:p-2 rounded-full">
-                        <CheckCircle className="text-green-600" size={16} />
+                      <div className="bg-green-100 p-1 sm:p-2 rounded-full">
+                        <CheckCircle className="text-green-700" size={16} />
                       </div>
-                      <span className="text-green-600 font-serif font-bold text-base sm:text-xl">RSVP Sent!</span>
+                      <span className={`text-green-800 ${cinzel.className} font-bold text-sm sm:text-xl`}>RSVP Sent!</span>
                     </div>
-                    <p className="text-green-600 font-sans text-xs sm:text-base">
+                    <p className={`text-green-700 ${cormorant.className} text-xs sm:text-lg`}>
                       Thank you for your RSVP! We look forward to celebrating with you. 💕
                     </p>
                   </div>
                 )}
 
                 {error && (
-                  <div className="text-center mt-4 sm:mt-6 p-3 sm:p-6 bg-gradient-to-r from-red-50 to-red-100 border-2 border-red-200 rounded-lg sm:rounded-2xl backdrop-blur-sm">
+                  <div className="text-center mt-4 sm:mt-6 p-3 sm:p-6 bg-red-50/80 border border-red-200 rounded-lg sm:rounded-xl backdrop-blur-sm">
                     <div className="flex items-center justify-center gap-2 sm:gap-3 mb-2 sm:mb-3">
-                      <div className="bg-red-500/20 p-1 sm:p-2 rounded-full">
-                        <AlertCircle className="text-red-500" size={16} />
+                      <div className="bg-red-100 p-1 sm:p-2 rounded-full">
+                        <AlertCircle className="text-red-700" size={16} />
                       </div>
-                      <span className="text-red-500 font-serif font-bold text-base sm:text-xl">Error</span>
+                      <span className={`text-red-800 ${cinzel.className} font-bold text-sm sm:text-xl`}>Error</span>
                     </div>
-                    <p className="text-red-500 font-sans text-xs sm:text-base">{error}</p>
+                    <p className={`text-red-700 ${cormorant.className} text-xs sm:text-lg`}>{error}</p>
                   </div>
                 )}
               </form>

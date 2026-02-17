@@ -194,7 +194,7 @@ function TimelineCard({ event, Icon, mobile }: { event: TimelineEvent; Icon: Tim
             className={`${mobile ? "w-3.5 h-3.5" : "w-4 h-4 md:w-5 md:h-5"} text-[#800A06] flex-shrink-0`}
           />
           <p
-            className={`${mobile ? "text-[10px]" : "text-xs sm:text-sm md:text-base"} font-bold tracking-[0.15em] text-[#800A06] uppercase`}
+            className={`${mobile ? "text-[11px]" : "text-xs sm:text-sm md:text-base"} font-bold tracking-[0.15em] text-[#800A06] uppercase`}
           >
             {event.time}
           </p>
@@ -210,7 +210,7 @@ function TimelineCard({ event, Icon, mobile }: { event: TimelineEvent; Icon: Tim
         {/* Description */}
         {event.description && (
           <p
-            className={`${mobile ? "text-[10px] sm:text-xs" : "text-xs sm:text-sm md:text-base"} ${cormorant.className} text-[#800A06]/90 leading-relaxed`}
+            className={`${mobile ? "text-[11px] sm:text-xs" : "text-xs sm:text-sm md:text-base"} ${cormorant.className} text-[#800A06]/90 leading-relaxed`}
           >
             {event.description}
           </p>
@@ -226,7 +226,7 @@ function TimelineCard({ event, Icon, mobile }: { event: TimelineEvent; Icon: Tim
             <MapPin
               className={`${mobile ? "w-3 h-3" : "w-3.5 h-3.5 md:w-4 md:h-4"} text-[#800A06] mt-0.5 flex-shrink-0`}
             />
-            <p className={`${mobile ? "text-[10px]" : "text-xs md:text-sm"} ${cormorant.className} text-[#800A06]/90 leading-relaxed`}>
+            <p className={`${mobile ? "text-[11px]" : "text-xs md:text-sm"} ${cormorant.className} text-[#800A06]/90 leading-relaxed`}>
               {event.location}
             </p>
           </div>

@@ -105,7 +105,7 @@ export function Details() {
               {/* Date Section */}
               <div className="text-center mb-5 sm:mb-8 md:mb-10">
                 {/* Day name */}
-                <p className="text-[10px] sm:text-xs md:text-sm font-[family-name:var(--font-crimson)] font-semibold text-[#800A06] uppercase tracking-[0.2em] mb-2 sm:mb-3">
+                <p className="text-[11px] sm:text-xs md:text-sm font-[family-name:var(--font-crimson)] font-semibold text-[#800A06] uppercase tracking-[0.2em] mb-2 sm:mb-3">
                   {siteConfig.ceremony.day}
                 </p>
                 
@@ -152,11 +152,11 @@ export function Details() {
                       {ceremonyVenueName}
                     </p>
                     {ceremonyVenueDetail && (
-                      <p className="text-[10px] sm:text-xs md:text-sm font-[family-name:var(--font-crimson)] text-[#800A06]/70 leading-relaxed mt-1">
+                      <p className="text-[11px] sm:text-xs md:text-sm font-[family-name:var(--font-crimson)] text-[#800A06]/70 leading-relaxed mt-1">
                         {ceremonyVenueDetail}
                       </p>
                     )}
-                    <p className="text-[10px] sm:text-xs md:text-sm font-[family-name:var(--font-crimson)] text-[#800A06]/70 leading-relaxed">
+                    <p className="text-[11px] sm:text-xs md:text-sm font-[family-name:var(--font-crimson)] text-[#800A06]/70 leading-relaxed">
                       {ceremonyAddress}
                     </p>
                   </div>
@@ -250,7 +250,7 @@ export function Details() {
                   </p>
                 ) : (
                   <>
-                    <p className="text-[10px] sm:text-xs md:text-sm font-[family-name:var(--font-crimson)] font-semibold text-[#800A06] uppercase tracking-[0.2em] mb-2 sm:mb-3">
+                    <p className="text-[11px] sm:text-xs md:text-sm font-[family-name:var(--font-crimson)] font-semibold text-[#800A06] uppercase tracking-[0.2em] mb-2 sm:mb-3">
                       {siteConfig.reception.time === "After ceremony" ? "Starts" : "Starts at"}
                     </p>
                     <p className="text-sm sm:text-base md:text-lg lg:text-xl font-[family-name:var(--font-crimson)] font-semibold text-[#800A06] tracking-wide">
@@ -272,11 +272,11 @@ export function Details() {
                       {receptionVenueName}
                     </p>
                     {receptionVenueDetail && (
-                      <p className="text-[10px] sm:text-xs md:text-sm font-[family-name:var(--font-crimson)] text-[#800A06]/70 leading-relaxed mt-1">
+                      <p className="text-[11px] sm:text-xs md:text-sm font-[family-name:var(--font-crimson)] text-[#800A06]/70 leading-relaxed mt-1">
                         {receptionVenueDetail}
                       </p>
                     )}
-                    <p className="text-[10px] sm:text-xs md:text-sm font-[family-name:var(--font-crimson)] text-[#800A06]/70 leading-relaxed">
+                    <p className="text-[11px] sm:text-xs md:text-sm font-[family-name:var(--font-crimson)] text-[#800A06]/70 leading-relaxed">
                       {receptionAddress}
                     </p>
                   </div>
@@ -365,7 +365,7 @@ export function Details() {
               {/* Principal sponsor attire image */}
               <div className="relative w-full aspect-[4/3] sm:aspect-[3/2] max-w-2xl mx-auto rounded-lg sm:rounded-xl overflow-hidden border border-[#A93B0A]/30 mb-4 sm:mb-6 md:mb-8">
                 <Image
-                  src="/Details/PrincipalSponsor.png"
+                  src="/Details/GuestAttire2.png"
                   alt="Principal sponsor attire — follow the color palette"
                   fill
                   className="object-contain bg-[#F9F8F4]/50 p-2 sm:p-3"
@@ -414,7 +414,7 @@ export function Details() {
               {/* Guest attire image */}
               <div className="relative w-full aspect-[4/3] sm:aspect-[3/2] max-w-2xl mx-auto rounded-lg sm:rounded-xl overflow-hidden border border-[#A93B0A]/30 mb-4 sm:mb-6 md:mb-8">
                 <Image
-                  src="/Details/GuestAttire.png"
+                  src="/Details/GuestAttire1.png"
                   alt="Guest attire inspiration — follow the color palette"
                   fill
                   className="object-contain bg-[#F9F8F4]/50 p-2 sm:p-3"
