@@ -365,7 +365,7 @@ export function Details() {
               {/* Principal sponsor attire image */}
               <div className="relative w-full aspect-[4/3] sm:aspect-[3/2] max-w-2xl mx-auto rounded-lg sm:rounded-xl overflow-hidden border border-[#A93B0A]/30 mb-4 sm:mb-6 md:mb-8">
                 <Image
-                  src="/Details/GuestAttire2.png"
+                  src="/Details/PrincipalSponsor.png"
                   alt="Principal sponsor attire — follow the color palette"
                   fill
                   className="object-contain bg-[#F9F8F4]/50 p-2 sm:p-3"
